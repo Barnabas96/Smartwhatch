@@ -1,0 +1,46 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "C:/Users/B_arn/ikt104g24h/FinallyExam/BUILD/_deps/greentea-client-subbuild/CMakeFiles/greentea-client-populate"
+		},
+		{
+			"file" : "C:/Users/B_arn/ikt104g24h/FinallyExam/BUILD/_deps/greentea-client-subbuild/CMakeFiles/11c5d4fe28d8fde433b46ec6daf6deff/greentea-client-populate.rule"
+		},
+		{
+			"file" : "C:/Users/B_arn/ikt104g24h/FinallyExam/BUILD/_deps/greentea-client-subbuild/CMakeFiles/69b8281b54a24fb69aad8d168de6ffdf/greentea-client-populate-complete.rule"
+		},
+		{
+			"file" : "C:/Users/B_arn/ikt104g24h/FinallyExam/BUILD/_deps/greentea-client-subbuild/CMakeFiles/d6662e9ee6cad1d42c269d528a348a43/greentea-client-populate-build.rule"
+		},
+		{
+			"file" : "C:/Users/B_arn/ikt104g24h/FinallyExam/BUILD/_deps/greentea-client-subbuild/CMakeFiles/d6662e9ee6cad1d42c269d528a348a43/greentea-client-populate-configure.rule"
+		},
+		{
+			"file" : "C:/Users/B_arn/ikt104g24h/FinallyExam/BUILD/_deps/greentea-client-subbuild/CMakeFiles/d6662e9ee6cad1d42c269d528a348a43/greentea-client-populate-download.rule"
+		},
+		{
+			"file" : "C:/Users/B_arn/ikt104g24h/FinallyExam/BUILD/_deps/greentea-client-subbuild/CMakeFiles/d6662e9ee6cad1d42c269d528a348a43/greentea-client-populate-install.rule"
+		},
+		{
+			"file" : "C:/Users/B_arn/ikt104g24h/FinallyExam/BUILD/_deps/greentea-client-subbuild/CMakeFiles/d6662e9ee6cad1d42c269d528a348a43/greentea-client-populate-mkdir.rule"
+		},
+		{
+			"file" : "C:/Users/B_arn/ikt104g24h/FinallyExam/BUILD/_deps/greentea-client-subbuild/CMakeFiles/d6662e9ee6cad1d42c269d528a348a43/greentea-client-populate-patch.rule"
+		},
+		{
+			"file" : "C:/Users/B_arn/ikt104g24h/FinallyExam/BUILD/_deps/greentea-client-subbuild/CMakeFiles/d6662e9ee6cad1d42c269d528a348a43/greentea-client-populate-test.rule"
+		},
+		{
+			"file" : "C:/Users/B_arn/ikt104g24h/FinallyExam/BUILD/_deps/greentea-client-subbuild/CMakeFiles/d6662e9ee6cad1d42c269d528a348a43/greentea-client-populate-update.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"greentea-client-populate"
+		],
+		"name" : "greentea-client-populate"
+	}
+}

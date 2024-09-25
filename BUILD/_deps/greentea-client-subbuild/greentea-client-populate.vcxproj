@@ -1,0 +1,963 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x86</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|win32">
+      <Configuration>Debug</Configuration>
+      <Platform>win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|win32">
+      <Configuration>Release</Configuration>
+      <Platform>win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|win32">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|win32">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{D566D1A2-775A-32BF-AA94-78256FE55A13}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.19041.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>win32</Platform>
+    <ProjectName>greentea-client-populate</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\B_arn\ikt104g24h\FinallyExam\BUILD\_deps\greentea-client-subbuild\CMakeFiles\d6662e9ee6cad1d42c269d528a348a43\greentea-client-populate-mkdir.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">Creating directories for 'greentea-client-populate'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">setlocal
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E make_directory C:/Users/B_arn/ikt104g24h/FinallyExam/BUILD/_deps/greentea-client-src
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E make_directory C:/Users/B_arn/ikt104g24h/FinallyExam/BUILD/_deps/greentea-client-build
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E make_directory C:/Users/B_arn/ikt104g24h/FinallyExam/BUILD/_deps/greentea-client-subbuild/greentea-client-populate-prefix
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E make_directory C:/Users/B_arn/ikt104g24h/FinallyExam/BUILD/_deps/greentea-client-subbuild/greentea-client-populate-prefix/tmp
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E make_directory C:/Users/B_arn/ikt104g24h/FinallyExam/BUILD/_deps/greentea-client-subbuild/greentea-client-populate-prefix/src/greentea-client-populate-stamp/$(Configuration)
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E make_directory C:/Users/B_arn/ikt104g24h/FinallyExam/BUILD/_deps/greentea-client-subbuild/greentea-client-populate-prefix/src
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E make_directory C:/Users/B_arn/ikt104g24h/FinallyExam/BUILD/_deps/greentea-client-subbuild/greentea-client-populate-prefix/src/greentea-client-populate-stamp
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E touch C:/Users/B_arn/ikt104g24h/FinallyExam/BUILD/_deps/greentea-client-subbuild/greentea-client-populate-prefix/src/greentea-client-populate-stamp/$(Configuration)/greentea-client-populate-mkdir
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">C:\Users\B_arn\ikt104g24h\FinallyExam\BUILD\_deps\greentea-client-subbuild\greentea-client-populate-prefix\src\greentea-client-populate-stamp\$(Configuration)\greentea-client-populate-mkdir</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|win32'">Creating directories for 'greentea-client-populate'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|win32'">setlocal
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E make_directory C:/Users/B_arn/ikt104g24h/FinallyExam/BUILD/_deps/greentea-client-src
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E make_directory C:/Users/B_arn/ikt104g24h/FinallyExam/BUILD/_deps/greentea-client-build
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E make_directory C:/Users/B_arn/ikt104g24h/FinallyExam/BUILD/_deps/greentea-client-subbuild/greentea-client-populate-prefix
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E make_directory C:/Users/B_arn/ikt104g24h/FinallyExam/BUILD/_deps/greentea-client-subbuild/greentea-client-populate-prefix/tmp
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E make_directory C:/Users/B_arn/ikt104g24h/FinallyExam/BUILD/_deps/greentea-client-subbuild/greentea-client-populate-prefix/src/greentea-client-populate-stamp/$(Configuration)
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E make_directory C:/Users/B_arn/ikt104g24h/FinallyExam/BUILD/_deps/greentea-client-subbuild/greentea-client-populate-prefix/src
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E make_directory C:/Users/B_arn/ikt104g24h/FinallyExam/BUILD/_deps/greentea-client-subbuild/greentea-client-populate-prefix/src/greentea-client-populate-stamp
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E touch C:/Users/B_arn/ikt104g24h/FinallyExam/BUILD/_deps/greentea-client-subbuild/greentea-client-populate-prefix/src/greentea-client-populate-stamp/$(Configuration)/greentea-client-populate-mkdir
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|win32'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|win32'">C:\Users\B_arn\ikt104g24h\FinallyExam\BUILD\_deps\greentea-client-subbuild\greentea-client-populate-prefix\src\greentea-client-populate-stamp\$(Configuration)\greentea-client-populate-mkdir</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">Creating directories for 'greentea-client-populate'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">setlocal
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E make_directory C:/Users/B_arn/ikt104g24h/FinallyExam/BUILD/_deps/greentea-client-src
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E make_directory C:/Users/B_arn/ikt104g24h/FinallyExam/BUILD/_deps/greentea-client-build
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E make_directory C:/Users/B_arn/ikt104g24h/FinallyExam/BUILD/_deps/greentea-client-subbuild/greentea-client-populate-prefix
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E make_directory C:/Users/B_arn/ikt104g24h/FinallyExam/BUILD/_deps/greentea-client-subbuild/greentea-client-populate-prefix/tmp
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E make_directory C:/Users/B_arn/ikt104g24h/FinallyExam/BUILD/_deps/greentea-client-subbuild/greentea-client-populate-prefix/src/greentea-client-populate-stamp/$(Configuration)
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E make_directory C:/Users/B_arn/ikt104g24h/FinallyExam/BUILD/_deps/greentea-client-subbuild/greentea-client-populate-prefix/src
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E make_directory C:/Users/B_arn/ikt104g24h/FinallyExam/BUILD/_deps/greentea-client-subbuild/greentea-client-populate-prefix/src/greentea-client-populate-stamp
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E touch C:/Users/B_arn/ikt104g24h/FinallyExam/BUILD/_deps/greentea-client-subbuild/greentea-client-populate-prefix/src/greentea-client-populate-stamp/$(Configuration)/greentea-client-populate-mkdir
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">C:\Users\B_arn\ikt104g24h\FinallyExam\BUILD\_deps\greentea-client-subbuild\greentea-client-populate-prefix\src\greentea-client-populate-stamp\$(Configuration)\greentea-client-populate-mkdir</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">Creating directories for 'greentea-client-populate'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">setlocal
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E make_directory C:/Users/B_arn/ikt104g24h/FinallyExam/BUILD/_deps/greentea-client-src
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E make_directory C:/Users/B_arn/ikt104g24h/FinallyExam/BUILD/_deps/greentea-client-build
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E make_directory C:/Users/B_arn/ikt104g24h/FinallyExam/BUILD/_deps/greentea-client-subbuild/greentea-client-populate-prefix
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E make_directory C:/Users/B_arn/ikt104g24h/FinallyExam/BUILD/_deps/greentea-client-subbuild/greentea-client-populate-prefix/tmp
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E make_directory C:/Users/B_arn/ikt104g24h/FinallyExam/BUILD/_deps/greentea-client-subbuild/greentea-client-populate-prefix/src/greentea-client-populate-stamp/$(Configuration)
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E make_directory C:/Users/B_arn/ikt104g24h/FinallyExam/BUILD/_deps/greentea-client-subbuild/greentea-client-populate-prefix/src
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E make_directory C:/Users/B_arn/ikt104g24h/FinallyExam/BUILD/_deps/greentea-client-subbuild/greentea-client-populate-prefix/src/greentea-client-populate-stamp
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E touch C:/Users/B_arn/ikt104g24h/FinallyExam/BUILD/_deps/greentea-client-subbuild/greentea-client-populate-prefix/src/greentea-client-populate-stamp/$(Configuration)/greentea-client-populate-mkdir
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">C:\Users\B_arn\ikt104g24h\FinallyExam\BUILD\_deps\greentea-client-subbuild\greentea-client-populate-prefix\src\greentea-client-populate-stamp\$(Configuration)\greentea-client-populate-mkdir</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\B_arn\ikt104g24h\FinallyExam\BUILD\_deps\greentea-client-subbuild\CMakeFiles\d6662e9ee6cad1d42c269d528a348a43\greentea-client-populate-download.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">Performing download step (git clone) for 'greentea-client-populate'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">setlocal
+cd C:\Users\B_arn\ikt104g24h\FinallyExam\BUILD\_deps
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -P C:/Users/B_arn/ikt104g24h/FinallyExam/BUILD/_deps/greentea-client-subbuild/greentea-client-populate-prefix/tmp/greentea-client-populate-gitclone.cmake
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E touch C:/Users/B_arn/ikt104g24h/FinallyExam/BUILD/_deps/greentea-client-subbuild/greentea-client-populate-prefix/src/greentea-client-populate-stamp/$(Configuration)/greentea-client-populate-download
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">C:\Users\B_arn\ikt104g24h\FinallyExam\BUILD\_deps\greentea-client-subbuild\greentea-client-populate-prefix\src\greentea-client-populate-stamp\greentea-client-populate-gitinfo.txt;C:\Users\B_arn\ikt104g24h\FinallyExam\BUILD\_deps\greentea-client-subbuild\greentea-client-populate-prefix\src\greentea-client-populate-stamp\$(Configuration)\greentea-client-populate-mkdir;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">C:\Users\B_arn\ikt104g24h\FinallyExam\BUILD\_deps\greentea-client-subbuild\greentea-client-populate-prefix\src\greentea-client-populate-stamp\$(Configuration)\greentea-client-populate-download</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|win32'">Performing download step (git clone) for 'greentea-client-populate'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|win32'">setlocal
+cd C:\Users\B_arn\ikt104g24h\FinallyExam\BUILD\_deps
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -P C:/Users/B_arn/ikt104g24h/FinallyExam/BUILD/_deps/greentea-client-subbuild/greentea-client-populate-prefix/tmp/greentea-client-populate-gitclone.cmake
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E touch C:/Users/B_arn/ikt104g24h/FinallyExam/BUILD/_deps/greentea-client-subbuild/greentea-client-populate-prefix/src/greentea-client-populate-stamp/$(Configuration)/greentea-client-populate-download
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|win32'">C:\Users\B_arn\ikt104g24h\FinallyExam\BUILD\_deps\greentea-client-subbuild\greentea-client-populate-prefix\src\greentea-client-populate-stamp\greentea-client-populate-gitinfo.txt;C:\Users\B_arn\ikt104g24h\FinallyExam\BUILD\_deps\greentea-client-subbuild\greentea-client-populate-prefix\src\greentea-client-populate-stamp\$(Configuration)\greentea-client-populate-mkdir;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|win32'">C:\Users\B_arn\ikt104g24h\FinallyExam\BUILD\_deps\greentea-client-subbuild\greentea-client-populate-prefix\src\greentea-client-populate-stamp\$(Configuration)\greentea-client-populate-download</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">Performing download step (git clone) for 'greentea-client-populate'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">setlocal
+cd C:\Users\B_arn\ikt104g24h\FinallyExam\BUILD\_deps
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -P C:/Users/B_arn/ikt104g24h/FinallyExam/BUILD/_deps/greentea-client-subbuild/greentea-client-populate-prefix/tmp/greentea-client-populate-gitclone.cmake
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E touch C:/Users/B_arn/ikt104g24h/FinallyExam/BUILD/_deps/greentea-client-subbuild/greentea-client-populate-prefix/src/greentea-client-populate-stamp/$(Configuration)/greentea-client-populate-download
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">C:\Users\B_arn\ikt104g24h\FinallyExam\BUILD\_deps\greentea-client-subbuild\greentea-client-populate-prefix\src\greentea-client-populate-stamp\greentea-client-populate-gitinfo.txt;C:\Users\B_arn\ikt104g24h\FinallyExam\BUILD\_deps\greentea-client-subbuild\greentea-client-populate-prefix\src\greentea-client-populate-stamp\$(Configuration)\greentea-client-populate-mkdir;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">C:\Users\B_arn\ikt104g24h\FinallyExam\BUILD\_deps\greentea-client-subbuild\greentea-client-populate-prefix\src\greentea-client-populate-stamp\$(Configuration)\greentea-client-populate-download</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">Performing download step (git clone) for 'greentea-client-populate'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">setlocal
+cd C:\Users\B_arn\ikt104g24h\FinallyExam\BUILD\_deps
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -P C:/Users/B_arn/ikt104g24h/FinallyExam/BUILD/_deps/greentea-client-subbuild/greentea-client-populate-prefix/tmp/greentea-client-populate-gitclone.cmake
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E touch C:/Users/B_arn/ikt104g24h/FinallyExam/BUILD/_deps/greentea-client-subbuild/greentea-client-populate-prefix/src/greentea-client-populate-stamp/$(Configuration)/greentea-client-populate-download
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">C:\Users\B_arn\ikt104g24h\FinallyExam\BUILD\_deps\greentea-client-subbuild\greentea-client-populate-prefix\src\greentea-client-populate-stamp\greentea-client-populate-gitinfo.txt;C:\Users\B_arn\ikt104g24h\FinallyExam\BUILD\_deps\greentea-client-subbuild\greentea-client-populate-prefix\src\greentea-client-populate-stamp\$(Configuration)\greentea-client-populate-mkdir;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">C:\Users\B_arn\ikt104g24h\FinallyExam\BUILD\_deps\greentea-client-subbuild\greentea-client-populate-prefix\src\greentea-client-populate-stamp\$(Configuration)\greentea-client-populate-download</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\B_arn\ikt104g24h\FinallyExam\BUILD\_deps\greentea-client-subbuild\CMakeFiles\d6662e9ee6cad1d42c269d528a348a43\greentea-client-populate-update.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">Performing update step for 'greentea-client-populate'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">setlocal
+cd C:\Users\B_arn\ikt104g24h\FinallyExam\BUILD\_deps\greentea-client-src
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -P C:/Users/B_arn/ikt104g24h/FinallyExam/BUILD/_deps/greentea-client-subbuild/greentea-client-populate-prefix/tmp/greentea-client-populate-gitupdate.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">C:\Users\B_arn\ikt104g24h\FinallyExam\BUILD\_deps\greentea-client-subbuild\greentea-client-populate-prefix\src\greentea-client-populate-stamp\$(Configuration)\greentea-client-populate-download;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">C:\Users\B_arn\ikt104g24h\FinallyExam\BUILD\_deps\greentea-client-subbuild\greentea-client-populate-prefix\src\greentea-client-populate-stamp\$(Configuration)\greentea-client-populate-update</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">false</LinkObjects>
+      <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">false</VerifyInputsAndOutputsExist>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|win32'">Performing update step for 'greentea-client-populate'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|win32'">setlocal
+cd C:\Users\B_arn\ikt104g24h\FinallyExam\BUILD\_deps\greentea-client-src
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -P C:/Users/B_arn/ikt104g24h/FinallyExam/BUILD/_deps/greentea-client-subbuild/greentea-client-populate-prefix/tmp/greentea-client-populate-gitupdate.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|win32'">C:\Users\B_arn\ikt104g24h\FinallyExam\BUILD\_deps\greentea-client-subbuild\greentea-client-populate-prefix\src\greentea-client-populate-stamp\$(Configuration)\greentea-client-populate-download;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|win32'">C:\Users\B_arn\ikt104g24h\FinallyExam\BUILD\_deps\greentea-client-subbuild\greentea-client-populate-prefix\src\greentea-client-populate-stamp\$(Configuration)\greentea-client-populate-update</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|win32'">false</LinkObjects>
+      <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='Release|win32'">false</VerifyInputsAndOutputsExist>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">Performing update step for 'greentea-client-populate'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">setlocal
+cd C:\Users\B_arn\ikt104g24h\FinallyExam\BUILD\_deps\greentea-client-src
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -P C:/Users/B_arn/ikt104g24h/FinallyExam/BUILD/_deps/greentea-client-subbuild/greentea-client-populate-prefix/tmp/greentea-client-populate-gitupdate.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">C:\Users\B_arn\ikt104g24h\FinallyExam\BUILD\_deps\greentea-client-subbuild\greentea-client-populate-prefix\src\greentea-client-populate-stamp\$(Configuration)\greentea-client-populate-download;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">C:\Users\B_arn\ikt104g24h\FinallyExam\BUILD\_deps\greentea-client-subbuild\greentea-client-populate-prefix\src\greentea-client-populate-stamp\$(Configuration)\greentea-client-populate-update</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">false</LinkObjects>
+      <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">false</VerifyInputsAndOutputsExist>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">Performing update step for 'greentea-client-populate'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">setlocal
+cd C:\Users\B_arn\ikt104g24h\FinallyExam\BUILD\_deps\greentea-client-src
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -P C:/Users/B_arn/ikt104g24h/FinallyExam/BUILD/_deps/greentea-client-subbuild/greentea-client-populate-prefix/tmp/greentea-client-populate-gitupdate.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">C:\Users\B_arn\ikt104g24h\FinallyExam\BUILD\_deps\greentea-client-subbuild\greentea-client-populate-prefix\src\greentea-client-populate-stamp\$(Configuration)\greentea-client-populate-download;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">C:\Users\B_arn\ikt104g24h\FinallyExam\BUILD\_deps\greentea-client-subbuild\greentea-client-populate-prefix\src\greentea-client-populate-stamp\$(Configuration)\greentea-client-populate-update</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">false</LinkObjects>
+      <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">false</VerifyInputsAndOutputsExist>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\B_arn\ikt104g24h\FinallyExam\BUILD\_deps\greentea-client-subbuild\CMakeFiles\d6662e9ee6cad1d42c269d528a348a43\greentea-client-populate-patch.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">No patch step for 'greentea-client-populate'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">setlocal
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E touch C:/Users/B_arn/ikt104g24h/FinallyExam/BUILD/_deps/greentea-client-subbuild/greentea-client-populate-prefix/src/greentea-client-populate-stamp/$(Configuration)/greentea-client-populate-patch
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">C:\Users\B_arn\ikt104g24h\FinallyExam\BUILD\_deps\greentea-client-subbuild\greentea-client-populate-prefix\src\greentea-client-populate-stamp\$(Configuration)\greentea-client-populate-update;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">C:\Users\B_arn\ikt104g24h\FinallyExam\BUILD\_deps\greentea-client-subbuild\greentea-client-populate-prefix\src\greentea-client-populate-stamp\$(Configuration)\greentea-client-populate-patch</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">false</LinkObjects>
+      <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">false</VerifyInputsAndOutputsExist>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|win32'">No patch step for 'greentea-client-populate'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|win32'">setlocal
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E touch C:/Users/B_arn/ikt104g24h/FinallyExam/BUILD/_deps/greentea-client-subbuild/greentea-client-populate-prefix/src/greentea-client-populate-stamp/$(Configuration)/greentea-client-populate-patch
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|win32'">C:\Users\B_arn\ikt104g24h\FinallyExam\BUILD\_deps\greentea-client-subbuild\greentea-client-populate-prefix\src\greentea-client-populate-stamp\$(Configuration)\greentea-client-populate-update;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|win32'">C:\Users\B_arn\ikt104g24h\FinallyExam\BUILD\_deps\greentea-client-subbuild\greentea-client-populate-prefix\src\greentea-client-populate-stamp\$(Configuration)\greentea-client-populate-patch</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|win32'">false</LinkObjects>
+      <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='Release|win32'">false</VerifyInputsAndOutputsExist>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">No patch step for 'greentea-client-populate'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">setlocal
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E touch C:/Users/B_arn/ikt104g24h/FinallyExam/BUILD/_deps/greentea-client-subbuild/greentea-client-populate-prefix/src/greentea-client-populate-stamp/$(Configuration)/greentea-client-populate-patch
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">C:\Users\B_arn\ikt104g24h\FinallyExam\BUILD\_deps\greentea-client-subbuild\greentea-client-populate-prefix\src\greentea-client-populate-stamp\$(Configuration)\greentea-client-populate-update;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">C:\Users\B_arn\ikt104g24h\FinallyExam\BUILD\_deps\greentea-client-subbuild\greentea-client-populate-prefix\src\greentea-client-populate-stamp\$(Configuration)\greentea-client-populate-patch</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">false</LinkObjects>
+      <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">false</VerifyInputsAndOutputsExist>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">No patch step for 'greentea-client-populate'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">setlocal
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E touch C:/Users/B_arn/ikt104g24h/FinallyExam/BUILD/_deps/greentea-client-subbuild/greentea-client-populate-prefix/src/greentea-client-populate-stamp/$(Configuration)/greentea-client-populate-patch
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">C:\Users\B_arn\ikt104g24h\FinallyExam\BUILD\_deps\greentea-client-subbuild\greentea-client-populate-prefix\src\greentea-client-populate-stamp\$(Configuration)\greentea-client-populate-update;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">C:\Users\B_arn\ikt104g24h\FinallyExam\BUILD\_deps\greentea-client-subbuild\greentea-client-populate-prefix\src\greentea-client-populate-stamp\$(Configuration)\greentea-client-populate-patch</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">false</LinkObjects>
+      <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">false</VerifyInputsAndOutputsExist>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\B_arn\ikt104g24h\FinallyExam\BUILD\_deps\greentea-client-subbuild\CMakeFiles\d6662e9ee6cad1d42c269d528a348a43\greentea-client-populate-configure.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">No configure step for 'greentea-client-populate'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">setlocal
+cd C:\Users\B_arn\ikt104g24h\FinallyExam\BUILD\_deps\greentea-client-build
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E touch C:/Users/B_arn/ikt104g24h/FinallyExam/BUILD/_deps/greentea-client-subbuild/greentea-client-populate-prefix/src/greentea-client-populate-stamp/$(Configuration)/greentea-client-populate-configure
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">C:\Users\B_arn\ikt104g24h\FinallyExam\BUILD\_deps\greentea-client-subbuild\greentea-client-populate-prefix\tmp\greentea-client-populate-cfgcmd.txt;C:\Users\B_arn\ikt104g24h\FinallyExam\BUILD\_deps\greentea-client-subbuild\greentea-client-populate-prefix\src\greentea-client-populate-stamp\$(Configuration)\greentea-client-populate-patch;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">C:\Users\B_arn\ikt104g24h\FinallyExam\BUILD\_deps\greentea-client-subbuild\greentea-client-populate-prefix\src\greentea-client-populate-stamp\$(Configuration)\greentea-client-populate-configure</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|win32'">No configure step for 'greentea-client-populate'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|win32'">setlocal
+cd C:\Users\B_arn\ikt104g24h\FinallyExam\BUILD\_deps\greentea-client-build
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E touch C:/Users/B_arn/ikt104g24h/FinallyExam/BUILD/_deps/greentea-client-subbuild/greentea-client-populate-prefix/src/greentea-client-populate-stamp/$(Configuration)/greentea-client-populate-configure
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|win32'">C:\Users\B_arn\ikt104g24h\FinallyExam\BUILD\_deps\greentea-client-subbuild\greentea-client-populate-prefix\tmp\greentea-client-populate-cfgcmd.txt;C:\Users\B_arn\ikt104g24h\FinallyExam\BUILD\_deps\greentea-client-subbuild\greentea-client-populate-prefix\src\greentea-client-populate-stamp\$(Configuration)\greentea-client-populate-patch;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|win32'">C:\Users\B_arn\ikt104g24h\FinallyExam\BUILD\_deps\greentea-client-subbuild\greentea-client-populate-prefix\src\greentea-client-populate-stamp\$(Configuration)\greentea-client-populate-configure</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">No configure step for 'greentea-client-populate'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">setlocal
+cd C:\Users\B_arn\ikt104g24h\FinallyExam\BUILD\_deps\greentea-client-build
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E touch C:/Users/B_arn/ikt104g24h/FinallyExam/BUILD/_deps/greentea-client-subbuild/greentea-client-populate-prefix/src/greentea-client-populate-stamp/$(Configuration)/greentea-client-populate-configure
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">C:\Users\B_arn\ikt104g24h\FinallyExam\BUILD\_deps\greentea-client-subbuild\greentea-client-populate-prefix\tmp\greentea-client-populate-cfgcmd.txt;C:\Users\B_arn\ikt104g24h\FinallyExam\BUILD\_deps\greentea-client-subbuild\greentea-client-populate-prefix\src\greentea-client-populate-stamp\$(Configuration)\greentea-client-populate-patch;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">C:\Users\B_arn\ikt104g24h\FinallyExam\BUILD\_deps\greentea-client-subbuild\greentea-client-populate-prefix\src\greentea-client-populate-stamp\$(Configuration)\greentea-client-populate-configure</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">No configure step for 'greentea-client-populate'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">setlocal
+cd C:\Users\B_arn\ikt104g24h\FinallyExam\BUILD\_deps\greentea-client-build
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E touch C:/Users/B_arn/ikt104g24h/FinallyExam/BUILD/_deps/greentea-client-subbuild/greentea-client-populate-prefix/src/greentea-client-populate-stamp/$(Configuration)/greentea-client-populate-configure
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">C:\Users\B_arn\ikt104g24h\FinallyExam\BUILD\_deps\greentea-client-subbuild\greentea-client-populate-prefix\tmp\greentea-client-populate-cfgcmd.txt;C:\Users\B_arn\ikt104g24h\FinallyExam\BUILD\_deps\greentea-client-subbuild\greentea-client-populate-prefix\src\greentea-client-populate-stamp\$(Configuration)\greentea-client-populate-patch;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">C:\Users\B_arn\ikt104g24h\FinallyExam\BUILD\_deps\greentea-client-subbuild\greentea-client-populate-prefix\src\greentea-client-populate-stamp\$(Configuration)\greentea-client-populate-configure</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\B_arn\ikt104g24h\FinallyExam\BUILD\_deps\greentea-client-subbuild\CMakeFiles\d6662e9ee6cad1d42c269d528a348a43\greentea-client-populate-build.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">No build step for 'greentea-client-populate'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">setlocal
+cd C:\Users\B_arn\ikt104g24h\FinallyExam\BUILD\_deps\greentea-client-build
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E touch C:/Users/B_arn/ikt104g24h/FinallyExam/BUILD/_deps/greentea-client-subbuild/greentea-client-populate-prefix/src/greentea-client-populate-stamp/$(Configuration)/greentea-client-populate-build
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">C:\Users\B_arn\ikt104g24h\FinallyExam\BUILD\_deps\greentea-client-subbuild\greentea-client-populate-prefix\src\greentea-client-populate-stamp\$(Configuration)\greentea-client-populate-configure;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">C:\Users\B_arn\ikt104g24h\FinallyExam\BUILD\_deps\greentea-client-subbuild\greentea-client-populate-prefix\src\greentea-client-populate-stamp\$(Configuration)\greentea-client-populate-build</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|win32'">No build step for 'greentea-client-populate'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|win32'">setlocal
+cd C:\Users\B_arn\ikt104g24h\FinallyExam\BUILD\_deps\greentea-client-build
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E touch C:/Users/B_arn/ikt104g24h/FinallyExam/BUILD/_deps/greentea-client-subbuild/greentea-client-populate-prefix/src/greentea-client-populate-stamp/$(Configuration)/greentea-client-populate-build
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|win32'">C:\Users\B_arn\ikt104g24h\FinallyExam\BUILD\_deps\greentea-client-subbuild\greentea-client-populate-prefix\src\greentea-client-populate-stamp\$(Configuration)\greentea-client-populate-configure;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|win32'">C:\Users\B_arn\ikt104g24h\FinallyExam\BUILD\_deps\greentea-client-subbuild\greentea-client-populate-prefix\src\greentea-client-populate-stamp\$(Configuration)\greentea-client-populate-build</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">No build step for 'greentea-client-populate'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">setlocal
+cd C:\Users\B_arn\ikt104g24h\FinallyExam\BUILD\_deps\greentea-client-build
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E touch C:/Users/B_arn/ikt104g24h/FinallyExam/BUILD/_deps/greentea-client-subbuild/greentea-client-populate-prefix/src/greentea-client-populate-stamp/$(Configuration)/greentea-client-populate-build
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">C:\Users\B_arn\ikt104g24h\FinallyExam\BUILD\_deps\greentea-client-subbuild\greentea-client-populate-prefix\src\greentea-client-populate-stamp\$(Configuration)\greentea-client-populate-configure;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">C:\Users\B_arn\ikt104g24h\FinallyExam\BUILD\_deps\greentea-client-subbuild\greentea-client-populate-prefix\src\greentea-client-populate-stamp\$(Configuration)\greentea-client-populate-build</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">No build step for 'greentea-client-populate'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">setlocal
+cd C:\Users\B_arn\ikt104g24h\FinallyExam\BUILD\_deps\greentea-client-build
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E touch C:/Users/B_arn/ikt104g24h/FinallyExam/BUILD/_deps/greentea-client-subbuild/greentea-client-populate-prefix/src/greentea-client-populate-stamp/$(Configuration)/greentea-client-populate-build
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">C:\Users\B_arn\ikt104g24h\FinallyExam\BUILD\_deps\greentea-client-subbuild\greentea-client-populate-prefix\src\greentea-client-populate-stamp\$(Configuration)\greentea-client-populate-configure;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">C:\Users\B_arn\ikt104g24h\FinallyExam\BUILD\_deps\greentea-client-subbuild\greentea-client-populate-prefix\src\greentea-client-populate-stamp\$(Configuration)\greentea-client-populate-build</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\B_arn\ikt104g24h\FinallyExam\BUILD\_deps\greentea-client-subbuild\CMakeFiles\d6662e9ee6cad1d42c269d528a348a43\greentea-client-populate-install.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">No install step for 'greentea-client-populate'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">setlocal
+cd C:\Users\B_arn\ikt104g24h\FinallyExam\BUILD\_deps\greentea-client-build
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E touch C:/Users/B_arn/ikt104g24h/FinallyExam/BUILD/_deps/greentea-client-subbuild/greentea-client-populate-prefix/src/greentea-client-populate-stamp/$(Configuration)/greentea-client-populate-install
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">C:\Users\B_arn\ikt104g24h\FinallyExam\BUILD\_deps\greentea-client-subbuild\greentea-client-populate-prefix\src\greentea-client-populate-stamp\$(Configuration)\greentea-client-populate-build;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">C:\Users\B_arn\ikt104g24h\FinallyExam\BUILD\_deps\greentea-client-subbuild\greentea-client-populate-prefix\src\greentea-client-populate-stamp\$(Configuration)\greentea-client-populate-install</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|win32'">No install step for 'greentea-client-populate'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|win32'">setlocal
+cd C:\Users\B_arn\ikt104g24h\FinallyExam\BUILD\_deps\greentea-client-build
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E touch C:/Users/B_arn/ikt104g24h/FinallyExam/BUILD/_deps/greentea-client-subbuild/greentea-client-populate-prefix/src/greentea-client-populate-stamp/$(Configuration)/greentea-client-populate-install
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|win32'">C:\Users\B_arn\ikt104g24h\FinallyExam\BUILD\_deps\greentea-client-subbuild\greentea-client-populate-prefix\src\greentea-client-populate-stamp\$(Configuration)\greentea-client-populate-build;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|win32'">C:\Users\B_arn\ikt104g24h\FinallyExam\BUILD\_deps\greentea-client-subbuild\greentea-client-populate-prefix\src\greentea-client-populate-stamp\$(Configuration)\greentea-client-populate-install</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">No install step for 'greentea-client-populate'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">setlocal
+cd C:\Users\B_arn\ikt104g24h\FinallyExam\BUILD\_deps\greentea-client-build
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E touch C:/Users/B_arn/ikt104g24h/FinallyExam/BUILD/_deps/greentea-client-subbuild/greentea-client-populate-prefix/src/greentea-client-populate-stamp/$(Configuration)/greentea-client-populate-install
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">C:\Users\B_arn\ikt104g24h\FinallyExam\BUILD\_deps\greentea-client-subbuild\greentea-client-populate-prefix\src\greentea-client-populate-stamp\$(Configuration)\greentea-client-populate-build;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">C:\Users\B_arn\ikt104g24h\FinallyExam\BUILD\_deps\greentea-client-subbuild\greentea-client-populate-prefix\src\greentea-client-populate-stamp\$(Configuration)\greentea-client-populate-install</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">No install step for 'greentea-client-populate'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">setlocal
+cd C:\Users\B_arn\ikt104g24h\FinallyExam\BUILD\_deps\greentea-client-build
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E touch C:/Users/B_arn/ikt104g24h/FinallyExam/BUILD/_deps/greentea-client-subbuild/greentea-client-populate-prefix/src/greentea-client-populate-stamp/$(Configuration)/greentea-client-populate-install
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">C:\Users\B_arn\ikt104g24h\FinallyExam\BUILD\_deps\greentea-client-subbuild\greentea-client-populate-prefix\src\greentea-client-populate-stamp\$(Configuration)\greentea-client-populate-build;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">C:\Users\B_arn\ikt104g24h\FinallyExam\BUILD\_deps\greentea-client-subbuild\greentea-client-populate-prefix\src\greentea-client-populate-stamp\$(Configuration)\greentea-client-populate-install</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\B_arn\ikt104g24h\FinallyExam\BUILD\_deps\greentea-client-subbuild\CMakeFiles\d6662e9ee6cad1d42c269d528a348a43\greentea-client-populate-test.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">No test step for 'greentea-client-populate'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">setlocal
+cd C:\Users\B_arn\ikt104g24h\FinallyExam\BUILD\_deps\greentea-client-build
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E touch C:/Users/B_arn/ikt104g24h/FinallyExam/BUILD/_deps/greentea-client-subbuild/greentea-client-populate-prefix/src/greentea-client-populate-stamp/$(Configuration)/greentea-client-populate-test
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">C:\Users\B_arn\ikt104g24h\FinallyExam\BUILD\_deps\greentea-client-subbuild\greentea-client-populate-prefix\src\greentea-client-populate-stamp\$(Configuration)\greentea-client-populate-install;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">C:\Users\B_arn\ikt104g24h\FinallyExam\BUILD\_deps\greentea-client-subbuild\greentea-client-populate-prefix\src\greentea-client-populate-stamp\$(Configuration)\greentea-client-populate-test</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|win32'">No test step for 'greentea-client-populate'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|win32'">setlocal
+cd C:\Users\B_arn\ikt104g24h\FinallyExam\BUILD\_deps\greentea-client-build
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E touch C:/Users/B_arn/ikt104g24h/FinallyExam/BUILD/_deps/greentea-client-subbuild/greentea-client-populate-prefix/src/greentea-client-populate-stamp/$(Configuration)/greentea-client-populate-test
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|win32'">C:\Users\B_arn\ikt104g24h\FinallyExam\BUILD\_deps\greentea-client-subbuild\greentea-client-populate-prefix\src\greentea-client-populate-stamp\$(Configuration)\greentea-client-populate-install;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|win32'">C:\Users\B_arn\ikt104g24h\FinallyExam\BUILD\_deps\greentea-client-subbuild\greentea-client-populate-prefix\src\greentea-client-populate-stamp\$(Configuration)\greentea-client-populate-test</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">No test step for 'greentea-client-populate'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">setlocal
+cd C:\Users\B_arn\ikt104g24h\FinallyExam\BUILD\_deps\greentea-client-build
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E touch C:/Users/B_arn/ikt104g24h/FinallyExam/BUILD/_deps/greentea-client-subbuild/greentea-client-populate-prefix/src/greentea-client-populate-stamp/$(Configuration)/greentea-client-populate-test
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">C:\Users\B_arn\ikt104g24h\FinallyExam\BUILD\_deps\greentea-client-subbuild\greentea-client-populate-prefix\src\greentea-client-populate-stamp\$(Configuration)\greentea-client-populate-install;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">C:\Users\B_arn\ikt104g24h\FinallyExam\BUILD\_deps\greentea-client-subbuild\greentea-client-populate-prefix\src\greentea-client-populate-stamp\$(Configuration)\greentea-client-populate-test</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">No test step for 'greentea-client-populate'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">setlocal
+cd C:\Users\B_arn\ikt104g24h\FinallyExam\BUILD\_deps\greentea-client-build
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E touch C:/Users/B_arn/ikt104g24h/FinallyExam/BUILD/_deps/greentea-client-subbuild/greentea-client-populate-prefix/src/greentea-client-populate-stamp/$(Configuration)/greentea-client-populate-test
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">C:\Users\B_arn\ikt104g24h\FinallyExam\BUILD\_deps\greentea-client-subbuild\greentea-client-populate-prefix\src\greentea-client-populate-stamp\$(Configuration)\greentea-client-populate-install;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">C:\Users\B_arn\ikt104g24h\FinallyExam\BUILD\_deps\greentea-client-subbuild\greentea-client-populate-prefix\src\greentea-client-populate-stamp\$(Configuration)\greentea-client-populate-test</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\B_arn\ikt104g24h\FinallyExam\BUILD\_deps\greentea-client-subbuild\CMakeFiles\69b8281b54a24fb69aad8d168de6ffdf\greentea-client-populate-complete.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">Completed 'greentea-client-populate'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">setlocal
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E make_directory C:/Users/B_arn/ikt104g24h/FinallyExam/BUILD/_deps/greentea-client-subbuild/CMakeFiles/$(Configuration)
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E touch C:/Users/B_arn/ikt104g24h/FinallyExam/BUILD/_deps/greentea-client-subbuild/CMakeFiles/$(Configuration)/greentea-client-populate-complete
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E touch C:/Users/B_arn/ikt104g24h/FinallyExam/BUILD/_deps/greentea-client-subbuild/greentea-client-populate-prefix/src/greentea-client-populate-stamp/$(Configuration)/greentea-client-populate-done
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">C:\Users\B_arn\ikt104g24h\FinallyExam\BUILD\_deps\greentea-client-subbuild\greentea-client-populate-prefix\src\greentea-client-populate-stamp\$(Configuration)\greentea-client-populate-install;C:\Users\B_arn\ikt104g24h\FinallyExam\BUILD\_deps\greentea-client-subbuild\greentea-client-populate-prefix\src\greentea-client-populate-stamp\$(Configuration)\greentea-client-populate-mkdir;C:\Users\B_arn\ikt104g24h\FinallyExam\BUILD\_deps\greentea-client-subbuild\greentea-client-populate-prefix\src\greentea-client-populate-stamp\$(Configuration)\greentea-client-populate-download;C:\Users\B_arn\ikt104g24h\FinallyExam\BUILD\_deps\greentea-client-subbuild\greentea-client-populate-prefix\src\greentea-client-populate-stamp\$(Configuration)\greentea-client-populate-update;C:\Users\B_arn\ikt104g24h\FinallyExam\BUILD\_deps\greentea-client-subbuild\greentea-client-populate-prefix\src\greentea-client-populate-stamp\$(Configuration)\greentea-client-populate-patch;C:\Users\B_arn\ikt104g24h\FinallyExam\BUILD\_deps\greentea-client-subbuild\greentea-client-populate-prefix\src\greentea-client-populate-stamp\$(Configuration)\greentea-client-populate-configure;C:\Users\B_arn\ikt104g24h\FinallyExam\BUILD\_deps\greentea-client-subbuild\greentea-client-populate-prefix\src\greentea-client-populate-stamp\$(Configuration)\greentea-client-populate-build;C:\Users\B_arn\ikt104g24h\FinallyExam\BUILD\_deps\greentea-client-subbuild\greentea-client-populate-prefix\src\greentea-client-populate-stamp\$(Configuration)\greentea-client-populate-test;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">C:\Users\B_arn\ikt104g24h\FinallyExam\BUILD\_deps\greentea-client-subbuild\CMakeFiles\$(Configuration)\greentea-client-populate-complete</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">false</LinkObjects>
+      <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">false</VerifyInputsAndOutputsExist>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|win32'">Completed 'greentea-client-populate'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|win32'">setlocal
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E make_directory C:/Users/B_arn/ikt104g24h/FinallyExam/BUILD/_deps/greentea-client-subbuild/CMakeFiles/$(Configuration)
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E touch C:/Users/B_arn/ikt104g24h/FinallyExam/BUILD/_deps/greentea-client-subbuild/CMakeFiles/$(Configuration)/greentea-client-populate-complete
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E touch C:/Users/B_arn/ikt104g24h/FinallyExam/BUILD/_deps/greentea-client-subbuild/greentea-client-populate-prefix/src/greentea-client-populate-stamp/$(Configuration)/greentea-client-populate-done
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|win32'">C:\Users\B_arn\ikt104g24h\FinallyExam\BUILD\_deps\greentea-client-subbuild\greentea-client-populate-prefix\src\greentea-client-populate-stamp\$(Configuration)\greentea-client-populate-install;C:\Users\B_arn\ikt104g24h\FinallyExam\BUILD\_deps\greentea-client-subbuild\greentea-client-populate-prefix\src\greentea-client-populate-stamp\$(Configuration)\greentea-client-populate-mkdir;C:\Users\B_arn\ikt104g24h\FinallyExam\BUILD\_deps\greentea-client-subbuild\greentea-client-populate-prefix\src\greentea-client-populate-stamp\$(Configuration)\greentea-client-populate-download;C:\Users\B_arn\ikt104g24h\FinallyExam\BUILD\_deps\greentea-client-subbuild\greentea-client-populate-prefix\src\greentea-client-populate-stamp\$(Configuration)\greentea-client-populate-update;C:\Users\B_arn\ikt104g24h\FinallyExam\BUILD\_deps\greentea-client-subbuild\greentea-client-populate-prefix\src\greentea-client-populate-stamp\$(Configuration)\greentea-client-populate-patch;C:\Users\B_arn\ikt104g24h\FinallyExam\BUILD\_deps\greentea-client-subbuild\greentea-client-populate-prefix\src\greentea-client-populate-stamp\$(Configuration)\greentea-client-populate-configure;C:\Users\B_arn\ikt104g24h\FinallyExam\BUILD\_deps\greentea-client-subbuild\greentea-client-populate-prefix\src\greentea-client-populate-stamp\$(Configuration)\greentea-client-populate-build;C:\Users\B_arn\ikt104g24h\FinallyExam\BUILD\_deps\greentea-client-subbuild\greentea-client-populate-prefix\src\greentea-client-populate-stamp\$(Configuration)\greentea-client-populate-test;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|win32'">C:\Users\B_arn\ikt104g24h\FinallyExam\BUILD\_deps\greentea-client-subbuild\CMakeFiles\$(Configuration)\greentea-client-populate-complete</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|win32'">false</LinkObjects>
+      <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='Release|win32'">false</VerifyInputsAndOutputsExist>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">Completed 'greentea-client-populate'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">setlocal
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E make_directory C:/Users/B_arn/ikt104g24h/FinallyExam/BUILD/_deps/greentea-client-subbuild/CMakeFiles/$(Configuration)
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E touch C:/Users/B_arn/ikt104g24h/FinallyExam/BUILD/_deps/greentea-client-subbuild/CMakeFiles/$(Configuration)/greentea-client-populate-complete
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E touch C:/Users/B_arn/ikt104g24h/FinallyExam/BUILD/_deps/greentea-client-subbuild/greentea-client-populate-prefix/src/greentea-client-populate-stamp/$(Configuration)/greentea-client-populate-done
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">C:\Users\B_arn\ikt104g24h\FinallyExam\BUILD\_deps\greentea-client-subbuild\greentea-client-populate-prefix\src\greentea-client-populate-stamp\$(Configuration)\greentea-client-populate-install;C:\Users\B_arn\ikt104g24h\FinallyExam\BUILD\_deps\greentea-client-subbuild\greentea-client-populate-prefix\src\greentea-client-populate-stamp\$(Configuration)\greentea-client-populate-mkdir;C:\Users\B_arn\ikt104g24h\FinallyExam\BUILD\_deps\greentea-client-subbuild\greentea-client-populate-prefix\src\greentea-client-populate-stamp\$(Configuration)\greentea-client-populate-download;C:\Users\B_arn\ikt104g24h\FinallyExam\BUILD\_deps\greentea-client-subbuild\greentea-client-populate-prefix\src\greentea-client-populate-stamp\$(Configuration)\greentea-client-populate-update;C:\Users\B_arn\ikt104g24h\FinallyExam\BUILD\_deps\greentea-client-subbuild\greentea-client-populate-prefix\src\greentea-client-populate-stamp\$(Configuration)\greentea-client-populate-patch;C:\Users\B_arn\ikt104g24h\FinallyExam\BUILD\_deps\greentea-client-subbuild\greentea-client-populate-prefix\src\greentea-client-populate-stamp\$(Configuration)\greentea-client-populate-configure;C:\Users\B_arn\ikt104g24h\FinallyExam\BUILD\_deps\greentea-client-subbuild\greentea-client-populate-prefix\src\greentea-client-populate-stamp\$(Configuration)\greentea-client-populate-build;C:\Users\B_arn\ikt104g24h\FinallyExam\BUILD\_deps\greentea-client-subbuild\greentea-client-populate-prefix\src\greentea-client-populate-stamp\$(Configuration)\greentea-client-populate-test;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">C:\Users\B_arn\ikt104g24h\FinallyExam\BUILD\_deps\greentea-client-subbuild\CMakeFiles\$(Configuration)\greentea-client-populate-complete</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">false</LinkObjects>
+      <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">false</VerifyInputsAndOutputsExist>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">Completed 'greentea-client-populate'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">setlocal
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E make_directory C:/Users/B_arn/ikt104g24h/FinallyExam/BUILD/_deps/greentea-client-subbuild/CMakeFiles/$(Configuration)
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E touch C:/Users/B_arn/ikt104g24h/FinallyExam/BUILD/_deps/greentea-client-subbuild/CMakeFiles/$(Configuration)/greentea-client-populate-complete
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E touch C:/Users/B_arn/ikt104g24h/FinallyExam/BUILD/_deps/greentea-client-subbuild/greentea-client-populate-prefix/src/greentea-client-populate-stamp/$(Configuration)/greentea-client-populate-done
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">C:\Users\B_arn\ikt104g24h\FinallyExam\BUILD\_deps\greentea-client-subbuild\greentea-client-populate-prefix\src\greentea-client-populate-stamp\$(Configuration)\greentea-client-populate-install;C:\Users\B_arn\ikt104g24h\FinallyExam\BUILD\_deps\greentea-client-subbuild\greentea-client-populate-prefix\src\greentea-client-populate-stamp\$(Configuration)\greentea-client-populate-mkdir;C:\Users\B_arn\ikt104g24h\FinallyExam\BUILD\_deps\greentea-client-subbuild\greentea-client-populate-prefix\src\greentea-client-populate-stamp\$(Configuration)\greentea-client-populate-download;C:\Users\B_arn\ikt104g24h\FinallyExam\BUILD\_deps\greentea-client-subbuild\greentea-client-populate-prefix\src\greentea-client-populate-stamp\$(Configuration)\greentea-client-populate-update;C:\Users\B_arn\ikt104g24h\FinallyExam\BUILD\_deps\greentea-client-subbuild\greentea-client-populate-prefix\src\greentea-client-populate-stamp\$(Configuration)\greentea-client-populate-patch;C:\Users\B_arn\ikt104g24h\FinallyExam\BUILD\_deps\greentea-client-subbuild\greentea-client-populate-prefix\src\greentea-client-populate-stamp\$(Configuration)\greentea-client-populate-configure;C:\Users\B_arn\ikt104g24h\FinallyExam\BUILD\_deps\greentea-client-subbuild\greentea-client-populate-prefix\src\greentea-client-populate-stamp\$(Configuration)\greentea-client-populate-build;C:\Users\B_arn\ikt104g24h\FinallyExam\BUILD\_deps\greentea-client-subbuild\greentea-client-populate-prefix\src\greentea-client-populate-stamp\$(Configuration)\greentea-client-populate-test;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">C:\Users\B_arn\ikt104g24h\FinallyExam\BUILD\_deps\greentea-client-subbuild\CMakeFiles\$(Configuration)\greentea-client-populate-complete</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">false</LinkObjects>
+      <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">false</VerifyInputsAndOutputsExist>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\B_arn\ikt104g24h\FinallyExam\BUILD\_deps\greentea-client-subbuild\CMakeFiles\11c5d4fe28d8fde433b46ec6daf6deff\greentea-client-populate.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|win32'"></Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">C:\Users\B_arn\ikt104g24h\FinallyExam\BUILD\_deps\greentea-client-subbuild\CMakeFiles\$(Configuration)\greentea-client-populate-complete;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">C:\Users\B_arn\ikt104g24h\FinallyExam\BUILD\_deps\greentea-client-subbuild\CMakeFiles\greentea-client-populate</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">false</LinkObjects>
+      <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">false</VerifyInputsAndOutputsExist>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|win32'"></Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|win32'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|win32'">C:\Users\B_arn\ikt104g24h\FinallyExam\BUILD\_deps\greentea-client-subbuild\CMakeFiles\$(Configuration)\greentea-client-populate-complete;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|win32'">C:\Users\B_arn\ikt104g24h\FinallyExam\BUILD\_deps\greentea-client-subbuild\CMakeFiles\greentea-client-populate</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|win32'">false</LinkObjects>
+      <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='Release|win32'">false</VerifyInputsAndOutputsExist>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'"></Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">C:\Users\B_arn\ikt104g24h\FinallyExam\BUILD\_deps\greentea-client-subbuild\CMakeFiles\$(Configuration)\greentea-client-populate-complete;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">C:\Users\B_arn\ikt104g24h\FinallyExam\BUILD\_deps\greentea-client-subbuild\CMakeFiles\greentea-client-populate</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">false</LinkObjects>
+      <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">false</VerifyInputsAndOutputsExist>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'"></Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">C:\Users\B_arn\ikt104g24h\FinallyExam\BUILD\_deps\greentea-client-subbuild\CMakeFiles\$(Configuration)\greentea-client-populate-complete;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">C:\Users\B_arn\ikt104g24h\FinallyExam\BUILD\_deps\greentea-client-subbuild\CMakeFiles\greentea-client-populate</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">false</LinkObjects>
+      <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">false</VerifyInputsAndOutputsExist>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\B_arn\ikt104g24h\FinallyExam\BUILD\_deps\greentea-client-subbuild\CMakeLists.txt">
+      <StdOutEncoding>UTF-8</StdOutEncoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">Building Custom Rule C:/Users/B_arn/ikt104g24h/FinallyExam/BUILD/_deps/greentea-client-subbuild/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">setlocal
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SC:/Users/B_arn/ikt104g24h/FinallyExam/BUILD/_deps/greentea-client-subbuild -BC:/Users/B_arn/ikt104g24h/FinallyExam/BUILD/_deps/greentea-client-subbuild --check-stamp-file C:/Users/B_arn/ikt104g24h/FinallyExam/BUILD/_deps/greentea-client-subbuild/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\CMakeGenericSystem.cmake;C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\CMakeInitializeConfigs.cmake;C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\ExternalProject-gitupdate.cmake.in;C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\ExternalProject.cmake;C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\Platform\Windows.cmake;C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\Platform\WindowsPaths.cmake;C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\RepositoryInfo.txt.in;C:\Users\B_arn\ikt104g24h\FinallyExam\BUILD\_deps\greentea-client-subbuild\CMakeFiles\3.20.21032501-MSVC_2\CMakeSystem.cmake;C:\Users\B_arn\ikt104g24h\FinallyExam\BUILD\_deps\greentea-client-subbuild\greentea-client-populate-prefix\tmp\greentea-client-populate-cfgcmd.txt.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">C:\Users\B_arn\ikt104g24h\FinallyExam\BUILD\_deps\greentea-client-subbuild\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|win32'">Building Custom Rule C:/Users/B_arn/ikt104g24h/FinallyExam/BUILD/_deps/greentea-client-subbuild/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|win32'">setlocal
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SC:/Users/B_arn/ikt104g24h/FinallyExam/BUILD/_deps/greentea-client-subbuild -BC:/Users/B_arn/ikt104g24h/FinallyExam/BUILD/_deps/greentea-client-subbuild --check-stamp-file C:/Users/B_arn/ikt104g24h/FinallyExam/BUILD/_deps/greentea-client-subbuild/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|win32'">C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\CMakeGenericSystem.cmake;C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\CMakeInitializeConfigs.cmake;C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\ExternalProject-gitupdate.cmake.in;C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\ExternalProject.cmake;C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\Platform\Windows.cmake;C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\Platform\WindowsPaths.cmake;C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\RepositoryInfo.txt.in;C:\Users\B_arn\ikt104g24h\FinallyExam\BUILD\_deps\greentea-client-subbuild\CMakeFiles\3.20.21032501-MSVC_2\CMakeSystem.cmake;C:\Users\B_arn\ikt104g24h\FinallyExam\BUILD\_deps\greentea-client-subbuild\greentea-client-populate-prefix\tmp\greentea-client-populate-cfgcmd.txt.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|win32'">C:\Users\B_arn\ikt104g24h\FinallyExam\BUILD\_deps\greentea-client-subbuild\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">Building Custom Rule C:/Users/B_arn/ikt104g24h/FinallyExam/BUILD/_deps/greentea-client-subbuild/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">setlocal
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SC:/Users/B_arn/ikt104g24h/FinallyExam/BUILD/_deps/greentea-client-subbuild -BC:/Users/B_arn/ikt104g24h/FinallyExam/BUILD/_deps/greentea-client-subbuild --check-stamp-file C:/Users/B_arn/ikt104g24h/FinallyExam/BUILD/_deps/greentea-client-subbuild/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\CMakeGenericSystem.cmake;C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\CMakeInitializeConfigs.cmake;C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\ExternalProject-gitupdate.cmake.in;C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\ExternalProject.cmake;C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\Platform\Windows.cmake;C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\Platform\WindowsPaths.cmake;C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\RepositoryInfo.txt.in;C:\Users\B_arn\ikt104g24h\FinallyExam\BUILD\_deps\greentea-client-subbuild\CMakeFiles\3.20.21032501-MSVC_2\CMakeSystem.cmake;C:\Users\B_arn\ikt104g24h\FinallyExam\BUILD\_deps\greentea-client-subbuild\greentea-client-populate-prefix\tmp\greentea-client-populate-cfgcmd.txt.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">C:\Users\B_arn\ikt104g24h\FinallyExam\BUILD\_deps\greentea-client-subbuild\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">Building Custom Rule C:/Users/B_arn/ikt104g24h/FinallyExam/BUILD/_deps/greentea-client-subbuild/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">setlocal
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SC:/Users/B_arn/ikt104g24h/FinallyExam/BUILD/_deps/greentea-client-subbuild -BC:/Users/B_arn/ikt104g24h/FinallyExam/BUILD/_deps/greentea-client-subbuild --check-stamp-file C:/Users/B_arn/ikt104g24h/FinallyExam/BUILD/_deps/greentea-client-subbuild/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\CMakeGenericSystem.cmake;C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\CMakeInitializeConfigs.cmake;C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\ExternalProject-gitupdate.cmake.in;C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\ExternalProject.cmake;C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\Platform\Windows.cmake;C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\Platform\WindowsPaths.cmake;C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\RepositoryInfo.txt.in;C:\Users\B_arn\ikt104g24h\FinallyExam\BUILD\_deps\greentea-client-subbuild\CMakeFiles\3.20.21032501-MSVC_2\CMakeSystem.cmake;C:\Users\B_arn\ikt104g24h\FinallyExam\BUILD\_deps\greentea-client-subbuild\greentea-client-populate-prefix\tmp\greentea-client-populate-cfgcmd.txt.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">C:\Users\B_arn\ikt104g24h\FinallyExam\BUILD\_deps\greentea-client-subbuild\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="C:\Users\B_arn\ikt104g24h\FinallyExam\BUILD\_deps\greentea-client-subbuild\CMakeFiles\greentea-client-populate">
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="C:\Users\B_arn\ikt104g24h\FinallyExam\BUILD\_deps\greentea-client-subbuild\ZERO_CHECK.vcxproj">
+      <Project>{171A618A-BF9E-3071-90AB-CE75B1521234}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

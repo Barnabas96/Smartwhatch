@@ -1,0 +1,3 @@
+C:/Users/B_arn/ikt104g24h/FinallyExam/BUILD/_deps/googletest-subbuild/CMakeFiles/googletest-populate.dir
+C:/Users/B_arn/ikt104g24h/FinallyExam/BUILD/_deps/googletest-subbuild/CMakeFiles/ALL_BUILD.dir
+C:/Users/B_arn/ikt104g24h/FinallyExam/BUILD/_deps/googletest-subbuild/CMakeFiles/ZERO_CHECK.dir

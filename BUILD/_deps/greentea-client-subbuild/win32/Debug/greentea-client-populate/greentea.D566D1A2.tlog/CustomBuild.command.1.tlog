@@ -1,0 +1,162 @@
+^C:\USERS\B_ARN\IKT104G24H\FINALLYEXAM\BUILD\_DEPS\GREENTEA-CLIENT-SUBBUILD\CMAKEFILES\D6662E9EE6CAD1D42C269D528A348A43\GREENTEA-CLIENT-POPULATE-MKDIR.RULE
+setlocal
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E make_directory C:/Users/B_arn/ikt104g24h/FinallyExam/BUILD/_deps/greentea-client-src
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E make_directory C:/Users/B_arn/ikt104g24h/FinallyExam/BUILD/_deps/greentea-client-build
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E make_directory C:/Users/B_arn/ikt104g24h/FinallyExam/BUILD/_deps/greentea-client-subbuild/greentea-client-populate-prefix
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E make_directory C:/Users/B_arn/ikt104g24h/FinallyExam/BUILD/_deps/greentea-client-subbuild/greentea-client-populate-prefix/tmp
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E make_directory C:/Users/B_arn/ikt104g24h/FinallyExam/BUILD/_deps/greentea-client-subbuild/greentea-client-populate-prefix/src/greentea-client-populate-stamp/Debug
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E make_directory C:/Users/B_arn/ikt104g24h/FinallyExam/BUILD/_deps/greentea-client-subbuild/greentea-client-populate-prefix/src
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E make_directory C:/Users/B_arn/ikt104g24h/FinallyExam/BUILD/_deps/greentea-client-subbuild/greentea-client-populate-prefix/src/greentea-client-populate-stamp
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E touch C:/Users/B_arn/ikt104g24h/FinallyExam/BUILD/_deps/greentea-client-subbuild/greentea-client-populate-prefix/src/greentea-client-populate-stamp/Debug/greentea-client-populate-mkdir
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\B_ARN\IKT104G24H\FINALLYEXAM\BUILD\_DEPS\GREENTEA-CLIENT-SUBBUILD\CMAKEFILES\D6662E9EE6CAD1D42C269D528A348A43\GREENTEA-CLIENT-POPULATE-DOWNLOAD.RULE
+setlocal
+cd C:\Users\B_arn\ikt104g24h\FinallyExam\BUILD\_deps
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -P C:/Users/B_arn/ikt104g24h/FinallyExam/BUILD/_deps/greentea-client-subbuild/greentea-client-populate-prefix/tmp/greentea-client-populate-gitclone.cmake
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E touch C:/Users/B_arn/ikt104g24h/FinallyExam/BUILD/_deps/greentea-client-subbuild/greentea-client-populate-prefix/src/greentea-client-populate-stamp/Debug/greentea-client-populate-download
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\B_ARN\IKT104G24H\FINALLYEXAM\BUILD\_DEPS\GREENTEA-CLIENT-SUBBUILD\CMAKEFILES\D6662E9EE6CAD1D42C269D528A348A43\GREENTEA-CLIENT-POPULATE-UPDATE.RULE
+setlocal
+cd C:\Users\B_arn\ikt104g24h\FinallyExam\BUILD\_deps\greentea-client-src
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -P C:/Users/B_arn/ikt104g24h/FinallyExam/BUILD/_deps/greentea-client-subbuild/greentea-client-populate-prefix/tmp/greentea-client-populate-gitupdate.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\B_ARN\IKT104G24H\FINALLYEXAM\BUILD\_DEPS\GREENTEA-CLIENT-SUBBUILD\CMAKEFILES\D6662E9EE6CAD1D42C269D528A348A43\GREENTEA-CLIENT-POPULATE-PATCH.RULE
+setlocal
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E touch C:/Users/B_arn/ikt104g24h/FinallyExam/BUILD/_deps/greentea-client-subbuild/greentea-client-populate-prefix/src/greentea-client-populate-stamp/Debug/greentea-client-populate-patch
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\B_ARN\IKT104G24H\FINALLYEXAM\BUILD\_DEPS\GREENTEA-CLIENT-SUBBUILD\CMAKEFILES\D6662E9EE6CAD1D42C269D528A348A43\GREENTEA-CLIENT-POPULATE-CONFIGURE.RULE
+setlocal
+cd C:\Users\B_arn\ikt104g24h\FinallyExam\BUILD\_deps\greentea-client-build
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E touch C:/Users/B_arn/ikt104g24h/FinallyExam/BUILD/_deps/greentea-client-subbuild/greentea-client-populate-prefix/src/greentea-client-populate-stamp/Debug/greentea-client-populate-configure
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\B_ARN\IKT104G24H\FINALLYEXAM\BUILD\_DEPS\GREENTEA-CLIENT-SUBBUILD\CMAKEFILES\D6662E9EE6CAD1D42C269D528A348A43\GREENTEA-CLIENT-POPULATE-BUILD.RULE
+setlocal
+cd C:\Users\B_arn\ikt104g24h\FinallyExam\BUILD\_deps\greentea-client-build
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E touch C:/Users/B_arn/ikt104g24h/FinallyExam/BUILD/_deps/greentea-client-subbuild/greentea-client-populate-prefix/src/greentea-client-populate-stamp/Debug/greentea-client-populate-build
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\B_ARN\IKT104G24H\FINALLYEXAM\BUILD\_DEPS\GREENTEA-CLIENT-SUBBUILD\CMAKEFILES\D6662E9EE6CAD1D42C269D528A348A43\GREENTEA-CLIENT-POPULATE-INSTALL.RULE
+setlocal
+cd C:\Users\B_arn\ikt104g24h\FinallyExam\BUILD\_deps\greentea-client-build
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E touch C:/Users/B_arn/ikt104g24h/FinallyExam/BUILD/_deps/greentea-client-subbuild/greentea-client-populate-prefix/src/greentea-client-populate-stamp/Debug/greentea-client-populate-install
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\B_ARN\IKT104G24H\FINALLYEXAM\BUILD\_DEPS\GREENTEA-CLIENT-SUBBUILD\CMAKEFILES\D6662E9EE6CAD1D42C269D528A348A43\GREENTEA-CLIENT-POPULATE-TEST.RULE
+setlocal
+cd C:\Users\B_arn\ikt104g24h\FinallyExam\BUILD\_deps\greentea-client-build
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E touch C:/Users/B_arn/ikt104g24h/FinallyExam/BUILD/_deps/greentea-client-subbuild/greentea-client-populate-prefix/src/greentea-client-populate-stamp/Debug/greentea-client-populate-test
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\B_ARN\IKT104G24H\FINALLYEXAM\BUILD\_DEPS\GREENTEA-CLIENT-SUBBUILD\CMAKEFILES\69B8281B54A24FB69AAD8D168DE6FFDF\GREENTEA-CLIENT-POPULATE-COMPLETE.RULE
+setlocal
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E make_directory C:/Users/B_arn/ikt104g24h/FinallyExam/BUILD/_deps/greentea-client-subbuild/CMakeFiles/Debug
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E touch C:/Users/B_arn/ikt104g24h/FinallyExam/BUILD/_deps/greentea-client-subbuild/CMakeFiles/Debug/greentea-client-populate-complete
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E touch C:/Users/B_arn/ikt104g24h/FinallyExam/BUILD/_deps/greentea-client-subbuild/greentea-client-populate-prefix/src/greentea-client-populate-stamp/Debug/greentea-client-populate-done
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\B_ARN\IKT104G24H\FINALLYEXAM\BUILD\_DEPS\GREENTEA-CLIENT-SUBBUILD\CMAKEFILES\11C5D4FE28D8FDE433B46EC6DAF6DEFF\GREENTEA-CLIENT-POPULATE.RULE
+setlocal
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\B_ARN\IKT104G24H\FINALLYEXAM\BUILD\_DEPS\GREENTEA-CLIENT-SUBBUILD\CMAKELISTS.TXT
+setlocal
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SC:/Users/B_arn/ikt104g24h/FinallyExam/BUILD/_deps/greentea-client-subbuild -BC:/Users/B_arn/ikt104g24h/FinallyExam/BUILD/_deps/greentea-client-subbuild --check-stamp-file C:/Users/B_arn/ikt104g24h/FinallyExam/BUILD/_deps/greentea-client-subbuild/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

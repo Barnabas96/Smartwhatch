@@ -1,0 +1,3 @@
+C:/Users/B_arn/ikt104g24h/FinallyExam/BUILD/_deps/greentea-client-subbuild/CMakeFiles/greentea-client-populate.dir
+C:/Users/B_arn/ikt104g24h/FinallyExam/BUILD/_deps/greentea-client-subbuild/CMakeFiles/ALL_BUILD.dir
+C:/Users/B_arn/ikt104g24h/FinallyExam/BUILD/_deps/greentea-client-subbuild/CMakeFiles/ZERO_CHECK.dir

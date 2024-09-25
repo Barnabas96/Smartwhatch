@@ -1,0 +1,10 @@
+^C:\USERS\B_ARN\IKT104G24H\FINALLYEXAM\BUILD\_DEPS\GREENTEA-CLIENT-SUBBUILD\CMAKELISTS.TXT
+setlocal
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SC:/Users/B_arn/ikt104g24h/FinallyExam/BUILD/_deps/greentea-client-subbuild -BC:/Users/B_arn/ikt104g24h/FinallyExam/BUILD/_deps/greentea-client-subbuild --check-stamp-file C:/Users/B_arn/ikt104g24h/FinallyExam/BUILD/_deps/greentea-client-subbuild/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

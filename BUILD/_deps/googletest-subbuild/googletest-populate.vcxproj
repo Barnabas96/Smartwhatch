@@ -1,0 +1,963 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x86</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|win32">
+      <Configuration>Debug</Configuration>
+      <Platform>win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|win32">
+      <Configuration>Release</Configuration>
+      <Platform>win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|win32">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|win32">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{61F146F7-D87B-3480-BCEA-48161D91C517}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.19041.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>win32</Platform>
+    <ProjectName>googletest-populate</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\B_arn\ikt104g24h\FinallyExam\BUILD\_deps\googletest-subbuild\CMakeFiles\23bd7051fd3ba9e32c34376a52b9fff2\googletest-populate-mkdir.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">Creating directories for 'googletest-populate'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">setlocal
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E make_directory C:/Users/B_arn/ikt104g24h/FinallyExam/BUILD/_deps/googletest-src
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E make_directory C:/Users/B_arn/ikt104g24h/FinallyExam/BUILD/_deps/googletest-build
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E make_directory C:/Users/B_arn/ikt104g24h/FinallyExam/BUILD/_deps/googletest-subbuild/googletest-populate-prefix
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E make_directory C:/Users/B_arn/ikt104g24h/FinallyExam/BUILD/_deps/googletest-subbuild/googletest-populate-prefix/tmp
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E make_directory C:/Users/B_arn/ikt104g24h/FinallyExam/BUILD/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/$(Configuration)
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E make_directory C:/Users/B_arn/ikt104g24h/FinallyExam/BUILD/_deps/googletest-subbuild/googletest-populate-prefix/src
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E make_directory C:/Users/B_arn/ikt104g24h/FinallyExam/BUILD/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E touch C:/Users/B_arn/ikt104g24h/FinallyExam/BUILD/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/$(Configuration)/googletest-populate-mkdir
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">C:\Users\B_arn\ikt104g24h\FinallyExam\BUILD\_deps\googletest-subbuild\googletest-populate-prefix\src\googletest-populate-stamp\$(Configuration)\googletest-populate-mkdir</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|win32'">Creating directories for 'googletest-populate'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|win32'">setlocal
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E make_directory C:/Users/B_arn/ikt104g24h/FinallyExam/BUILD/_deps/googletest-src
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E make_directory C:/Users/B_arn/ikt104g24h/FinallyExam/BUILD/_deps/googletest-build
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E make_directory C:/Users/B_arn/ikt104g24h/FinallyExam/BUILD/_deps/googletest-subbuild/googletest-populate-prefix
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E make_directory C:/Users/B_arn/ikt104g24h/FinallyExam/BUILD/_deps/googletest-subbuild/googletest-populate-prefix/tmp
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E make_directory C:/Users/B_arn/ikt104g24h/FinallyExam/BUILD/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/$(Configuration)
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E make_directory C:/Users/B_arn/ikt104g24h/FinallyExam/BUILD/_deps/googletest-subbuild/googletest-populate-prefix/src
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E make_directory C:/Users/B_arn/ikt104g24h/FinallyExam/BUILD/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E touch C:/Users/B_arn/ikt104g24h/FinallyExam/BUILD/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/$(Configuration)/googletest-populate-mkdir
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|win32'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|win32'">C:\Users\B_arn\ikt104g24h\FinallyExam\BUILD\_deps\googletest-subbuild\googletest-populate-prefix\src\googletest-populate-stamp\$(Configuration)\googletest-populate-mkdir</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">Creating directories for 'googletest-populate'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">setlocal
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E make_directory C:/Users/B_arn/ikt104g24h/FinallyExam/BUILD/_deps/googletest-src
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E make_directory C:/Users/B_arn/ikt104g24h/FinallyExam/BUILD/_deps/googletest-build
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E make_directory C:/Users/B_arn/ikt104g24h/FinallyExam/BUILD/_deps/googletest-subbuild/googletest-populate-prefix
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E make_directory C:/Users/B_arn/ikt104g24h/FinallyExam/BUILD/_deps/googletest-subbuild/googletest-populate-prefix/tmp
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E make_directory C:/Users/B_arn/ikt104g24h/FinallyExam/BUILD/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/$(Configuration)
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E make_directory C:/Users/B_arn/ikt104g24h/FinallyExam/BUILD/_deps/googletest-subbuild/googletest-populate-prefix/src
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E make_directory C:/Users/B_arn/ikt104g24h/FinallyExam/BUILD/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E touch C:/Users/B_arn/ikt104g24h/FinallyExam/BUILD/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/$(Configuration)/googletest-populate-mkdir
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">C:\Users\B_arn\ikt104g24h\FinallyExam\BUILD\_deps\googletest-subbuild\googletest-populate-prefix\src\googletest-populate-stamp\$(Configuration)\googletest-populate-mkdir</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">Creating directories for 'googletest-populate'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">setlocal
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E make_directory C:/Users/B_arn/ikt104g24h/FinallyExam/BUILD/_deps/googletest-src
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E make_directory C:/Users/B_arn/ikt104g24h/FinallyExam/BUILD/_deps/googletest-build
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E make_directory C:/Users/B_arn/ikt104g24h/FinallyExam/BUILD/_deps/googletest-subbuild/googletest-populate-prefix
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E make_directory C:/Users/B_arn/ikt104g24h/FinallyExam/BUILD/_deps/googletest-subbuild/googletest-populate-prefix/tmp
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E make_directory C:/Users/B_arn/ikt104g24h/FinallyExam/BUILD/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/$(Configuration)
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E make_directory C:/Users/B_arn/ikt104g24h/FinallyExam/BUILD/_deps/googletest-subbuild/googletest-populate-prefix/src
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E make_directory C:/Users/B_arn/ikt104g24h/FinallyExam/BUILD/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E touch C:/Users/B_arn/ikt104g24h/FinallyExam/BUILD/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/$(Configuration)/googletest-populate-mkdir
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">C:\Users\B_arn\ikt104g24h\FinallyExam\BUILD\_deps\googletest-subbuild\googletest-populate-prefix\src\googletest-populate-stamp\$(Configuration)\googletest-populate-mkdir</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\B_arn\ikt104g24h\FinallyExam\BUILD\_deps\googletest-subbuild\CMakeFiles\23bd7051fd3ba9e32c34376a52b9fff2\googletest-populate-download.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">Performing download step (git clone) for 'googletest-populate'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">setlocal
+cd C:\Users\B_arn\ikt104g24h\FinallyExam\BUILD\_deps
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -P C:/Users/B_arn/ikt104g24h/FinallyExam/BUILD/_deps/googletest-subbuild/googletest-populate-prefix/tmp/googletest-populate-gitclone.cmake
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E touch C:/Users/B_arn/ikt104g24h/FinallyExam/BUILD/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/$(Configuration)/googletest-populate-download
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">C:\Users\B_arn\ikt104g24h\FinallyExam\BUILD\_deps\googletest-subbuild\googletest-populate-prefix\src\googletest-populate-stamp\googletest-populate-gitinfo.txt;C:\Users\B_arn\ikt104g24h\FinallyExam\BUILD\_deps\googletest-subbuild\googletest-populate-prefix\src\googletest-populate-stamp\$(Configuration)\googletest-populate-mkdir;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">C:\Users\B_arn\ikt104g24h\FinallyExam\BUILD\_deps\googletest-subbuild\googletest-populate-prefix\src\googletest-populate-stamp\$(Configuration)\googletest-populate-download</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|win32'">Performing download step (git clone) for 'googletest-populate'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|win32'">setlocal
+cd C:\Users\B_arn\ikt104g24h\FinallyExam\BUILD\_deps
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -P C:/Users/B_arn/ikt104g24h/FinallyExam/BUILD/_deps/googletest-subbuild/googletest-populate-prefix/tmp/googletest-populate-gitclone.cmake
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E touch C:/Users/B_arn/ikt104g24h/FinallyExam/BUILD/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/$(Configuration)/googletest-populate-download
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|win32'">C:\Users\B_arn\ikt104g24h\FinallyExam\BUILD\_deps\googletest-subbuild\googletest-populate-prefix\src\googletest-populate-stamp\googletest-populate-gitinfo.txt;C:\Users\B_arn\ikt104g24h\FinallyExam\BUILD\_deps\googletest-subbuild\googletest-populate-prefix\src\googletest-populate-stamp\$(Configuration)\googletest-populate-mkdir;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|win32'">C:\Users\B_arn\ikt104g24h\FinallyExam\BUILD\_deps\googletest-subbuild\googletest-populate-prefix\src\googletest-populate-stamp\$(Configuration)\googletest-populate-download</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">Performing download step (git clone) for 'googletest-populate'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">setlocal
+cd C:\Users\B_arn\ikt104g24h\FinallyExam\BUILD\_deps
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -P C:/Users/B_arn/ikt104g24h/FinallyExam/BUILD/_deps/googletest-subbuild/googletest-populate-prefix/tmp/googletest-populate-gitclone.cmake
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E touch C:/Users/B_arn/ikt104g24h/FinallyExam/BUILD/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/$(Configuration)/googletest-populate-download
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">C:\Users\B_arn\ikt104g24h\FinallyExam\BUILD\_deps\googletest-subbuild\googletest-populate-prefix\src\googletest-populate-stamp\googletest-populate-gitinfo.txt;C:\Users\B_arn\ikt104g24h\FinallyExam\BUILD\_deps\googletest-subbuild\googletest-populate-prefix\src\googletest-populate-stamp\$(Configuration)\googletest-populate-mkdir;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">C:\Users\B_arn\ikt104g24h\FinallyExam\BUILD\_deps\googletest-subbuild\googletest-populate-prefix\src\googletest-populate-stamp\$(Configuration)\googletest-populate-download</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">Performing download step (git clone) for 'googletest-populate'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">setlocal
+cd C:\Users\B_arn\ikt104g24h\FinallyExam\BUILD\_deps
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -P C:/Users/B_arn/ikt104g24h/FinallyExam/BUILD/_deps/googletest-subbuild/googletest-populate-prefix/tmp/googletest-populate-gitclone.cmake
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E touch C:/Users/B_arn/ikt104g24h/FinallyExam/BUILD/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/$(Configuration)/googletest-populate-download
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">C:\Users\B_arn\ikt104g24h\FinallyExam\BUILD\_deps\googletest-subbuild\googletest-populate-prefix\src\googletest-populate-stamp\googletest-populate-gitinfo.txt;C:\Users\B_arn\ikt104g24h\FinallyExam\BUILD\_deps\googletest-subbuild\googletest-populate-prefix\src\googletest-populate-stamp\$(Configuration)\googletest-populate-mkdir;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">C:\Users\B_arn\ikt104g24h\FinallyExam\BUILD\_deps\googletest-subbuild\googletest-populate-prefix\src\googletest-populate-stamp\$(Configuration)\googletest-populate-download</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\B_arn\ikt104g24h\FinallyExam\BUILD\_deps\googletest-subbuild\CMakeFiles\23bd7051fd3ba9e32c34376a52b9fff2\googletest-populate-update.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">Performing update step for 'googletest-populate'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">setlocal
+cd C:\Users\B_arn\ikt104g24h\FinallyExam\BUILD\_deps\googletest-src
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -P C:/Users/B_arn/ikt104g24h/FinallyExam/BUILD/_deps/googletest-subbuild/googletest-populate-prefix/tmp/googletest-populate-gitupdate.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">C:\Users\B_arn\ikt104g24h\FinallyExam\BUILD\_deps\googletest-subbuild\googletest-populate-prefix\src\googletest-populate-stamp\$(Configuration)\googletest-populate-download;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">C:\Users\B_arn\ikt104g24h\FinallyExam\BUILD\_deps\googletest-subbuild\googletest-populate-prefix\src\googletest-populate-stamp\$(Configuration)\googletest-populate-update</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">false</LinkObjects>
+      <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">false</VerifyInputsAndOutputsExist>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|win32'">Performing update step for 'googletest-populate'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|win32'">setlocal
+cd C:\Users\B_arn\ikt104g24h\FinallyExam\BUILD\_deps\googletest-src
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -P C:/Users/B_arn/ikt104g24h/FinallyExam/BUILD/_deps/googletest-subbuild/googletest-populate-prefix/tmp/googletest-populate-gitupdate.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|win32'">C:\Users\B_arn\ikt104g24h\FinallyExam\BUILD\_deps\googletest-subbuild\googletest-populate-prefix\src\googletest-populate-stamp\$(Configuration)\googletest-populate-download;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|win32'">C:\Users\B_arn\ikt104g24h\FinallyExam\BUILD\_deps\googletest-subbuild\googletest-populate-prefix\src\googletest-populate-stamp\$(Configuration)\googletest-populate-update</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|win32'">false</LinkObjects>
+      <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='Release|win32'">false</VerifyInputsAndOutputsExist>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">Performing update step for 'googletest-populate'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">setlocal
+cd C:\Users\B_arn\ikt104g24h\FinallyExam\BUILD\_deps\googletest-src
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -P C:/Users/B_arn/ikt104g24h/FinallyExam/BUILD/_deps/googletest-subbuild/googletest-populate-prefix/tmp/googletest-populate-gitupdate.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">C:\Users\B_arn\ikt104g24h\FinallyExam\BUILD\_deps\googletest-subbuild\googletest-populate-prefix\src\googletest-populate-stamp\$(Configuration)\googletest-populate-download;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">C:\Users\B_arn\ikt104g24h\FinallyExam\BUILD\_deps\googletest-subbuild\googletest-populate-prefix\src\googletest-populate-stamp\$(Configuration)\googletest-populate-update</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">false</LinkObjects>
+      <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">false</VerifyInputsAndOutputsExist>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">Performing update step for 'googletest-populate'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">setlocal
+cd C:\Users\B_arn\ikt104g24h\FinallyExam\BUILD\_deps\googletest-src
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -P C:/Users/B_arn/ikt104g24h/FinallyExam/BUILD/_deps/googletest-subbuild/googletest-populate-prefix/tmp/googletest-populate-gitupdate.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">C:\Users\B_arn\ikt104g24h\FinallyExam\BUILD\_deps\googletest-subbuild\googletest-populate-prefix\src\googletest-populate-stamp\$(Configuration)\googletest-populate-download;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">C:\Users\B_arn\ikt104g24h\FinallyExam\BUILD\_deps\googletest-subbuild\googletest-populate-prefix\src\googletest-populate-stamp\$(Configuration)\googletest-populate-update</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">false</LinkObjects>
+      <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">false</VerifyInputsAndOutputsExist>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\B_arn\ikt104g24h\FinallyExam\BUILD\_deps\googletest-subbuild\CMakeFiles\23bd7051fd3ba9e32c34376a52b9fff2\googletest-populate-patch.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">No patch step for 'googletest-populate'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">setlocal
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E touch C:/Users/B_arn/ikt104g24h/FinallyExam/BUILD/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/$(Configuration)/googletest-populate-patch
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">C:\Users\B_arn\ikt104g24h\FinallyExam\BUILD\_deps\googletest-subbuild\googletest-populate-prefix\src\googletest-populate-stamp\$(Configuration)\googletest-populate-update;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">C:\Users\B_arn\ikt104g24h\FinallyExam\BUILD\_deps\googletest-subbuild\googletest-populate-prefix\src\googletest-populate-stamp\$(Configuration)\googletest-populate-patch</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">false</LinkObjects>
+      <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">false</VerifyInputsAndOutputsExist>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|win32'">No patch step for 'googletest-populate'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|win32'">setlocal
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E touch C:/Users/B_arn/ikt104g24h/FinallyExam/BUILD/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/$(Configuration)/googletest-populate-patch
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|win32'">C:\Users\B_arn\ikt104g24h\FinallyExam\BUILD\_deps\googletest-subbuild\googletest-populate-prefix\src\googletest-populate-stamp\$(Configuration)\googletest-populate-update;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|win32'">C:\Users\B_arn\ikt104g24h\FinallyExam\BUILD\_deps\googletest-subbuild\googletest-populate-prefix\src\googletest-populate-stamp\$(Configuration)\googletest-populate-patch</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|win32'">false</LinkObjects>
+      <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='Release|win32'">false</VerifyInputsAndOutputsExist>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">No patch step for 'googletest-populate'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">setlocal
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E touch C:/Users/B_arn/ikt104g24h/FinallyExam/BUILD/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/$(Configuration)/googletest-populate-patch
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">C:\Users\B_arn\ikt104g24h\FinallyExam\BUILD\_deps\googletest-subbuild\googletest-populate-prefix\src\googletest-populate-stamp\$(Configuration)\googletest-populate-update;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">C:\Users\B_arn\ikt104g24h\FinallyExam\BUILD\_deps\googletest-subbuild\googletest-populate-prefix\src\googletest-populate-stamp\$(Configuration)\googletest-populate-patch</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">false</LinkObjects>
+      <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">false</VerifyInputsAndOutputsExist>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">No patch step for 'googletest-populate'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">setlocal
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E touch C:/Users/B_arn/ikt104g24h/FinallyExam/BUILD/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/$(Configuration)/googletest-populate-patch
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">C:\Users\B_arn\ikt104g24h\FinallyExam\BUILD\_deps\googletest-subbuild\googletest-populate-prefix\src\googletest-populate-stamp\$(Configuration)\googletest-populate-update;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">C:\Users\B_arn\ikt104g24h\FinallyExam\BUILD\_deps\googletest-subbuild\googletest-populate-prefix\src\googletest-populate-stamp\$(Configuration)\googletest-populate-patch</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">false</LinkObjects>
+      <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">false</VerifyInputsAndOutputsExist>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\B_arn\ikt104g24h\FinallyExam\BUILD\_deps\googletest-subbuild\CMakeFiles\23bd7051fd3ba9e32c34376a52b9fff2\googletest-populate-configure.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">No configure step for 'googletest-populate'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">setlocal
+cd C:\Users\B_arn\ikt104g24h\FinallyExam\BUILD\_deps\googletest-build
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E touch C:/Users/B_arn/ikt104g24h/FinallyExam/BUILD/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/$(Configuration)/googletest-populate-configure
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">C:\Users\B_arn\ikt104g24h\FinallyExam\BUILD\_deps\googletest-subbuild\googletest-populate-prefix\tmp\googletest-populate-cfgcmd.txt;C:\Users\B_arn\ikt104g24h\FinallyExam\BUILD\_deps\googletest-subbuild\googletest-populate-prefix\src\googletest-populate-stamp\$(Configuration)\googletest-populate-patch;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">C:\Users\B_arn\ikt104g24h\FinallyExam\BUILD\_deps\googletest-subbuild\googletest-populate-prefix\src\googletest-populate-stamp\$(Configuration)\googletest-populate-configure</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|win32'">No configure step for 'googletest-populate'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|win32'">setlocal
+cd C:\Users\B_arn\ikt104g24h\FinallyExam\BUILD\_deps\googletest-build
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E touch C:/Users/B_arn/ikt104g24h/FinallyExam/BUILD/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/$(Configuration)/googletest-populate-configure
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|win32'">C:\Users\B_arn\ikt104g24h\FinallyExam\BUILD\_deps\googletest-subbuild\googletest-populate-prefix\tmp\googletest-populate-cfgcmd.txt;C:\Users\B_arn\ikt104g24h\FinallyExam\BUILD\_deps\googletest-subbuild\googletest-populate-prefix\src\googletest-populate-stamp\$(Configuration)\googletest-populate-patch;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|win32'">C:\Users\B_arn\ikt104g24h\FinallyExam\BUILD\_deps\googletest-subbuild\googletest-populate-prefix\src\googletest-populate-stamp\$(Configuration)\googletest-populate-configure</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">No configure step for 'googletest-populate'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">setlocal
+cd C:\Users\B_arn\ikt104g24h\FinallyExam\BUILD\_deps\googletest-build
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E touch C:/Users/B_arn/ikt104g24h/FinallyExam/BUILD/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/$(Configuration)/googletest-populate-configure
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">C:\Users\B_arn\ikt104g24h\FinallyExam\BUILD\_deps\googletest-subbuild\googletest-populate-prefix\tmp\googletest-populate-cfgcmd.txt;C:\Users\B_arn\ikt104g24h\FinallyExam\BUILD\_deps\googletest-subbuild\googletest-populate-prefix\src\googletest-populate-stamp\$(Configuration)\googletest-populate-patch;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">C:\Users\B_arn\ikt104g24h\FinallyExam\BUILD\_deps\googletest-subbuild\googletest-populate-prefix\src\googletest-populate-stamp\$(Configuration)\googletest-populate-configure</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">No configure step for 'googletest-populate'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">setlocal
+cd C:\Users\B_arn\ikt104g24h\FinallyExam\BUILD\_deps\googletest-build
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E touch C:/Users/B_arn/ikt104g24h/FinallyExam/BUILD/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/$(Configuration)/googletest-populate-configure
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">C:\Users\B_arn\ikt104g24h\FinallyExam\BUILD\_deps\googletest-subbuild\googletest-populate-prefix\tmp\googletest-populate-cfgcmd.txt;C:\Users\B_arn\ikt104g24h\FinallyExam\BUILD\_deps\googletest-subbuild\googletest-populate-prefix\src\googletest-populate-stamp\$(Configuration)\googletest-populate-patch;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">C:\Users\B_arn\ikt104g24h\FinallyExam\BUILD\_deps\googletest-subbuild\googletest-populate-prefix\src\googletest-populate-stamp\$(Configuration)\googletest-populate-configure</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\B_arn\ikt104g24h\FinallyExam\BUILD\_deps\googletest-subbuild\CMakeFiles\23bd7051fd3ba9e32c34376a52b9fff2\googletest-populate-build.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">No build step for 'googletest-populate'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">setlocal
+cd C:\Users\B_arn\ikt104g24h\FinallyExam\BUILD\_deps\googletest-build
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E touch C:/Users/B_arn/ikt104g24h/FinallyExam/BUILD/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/$(Configuration)/googletest-populate-build
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">C:\Users\B_arn\ikt104g24h\FinallyExam\BUILD\_deps\googletest-subbuild\googletest-populate-prefix\src\googletest-populate-stamp\$(Configuration)\googletest-populate-configure;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">C:\Users\B_arn\ikt104g24h\FinallyExam\BUILD\_deps\googletest-subbuild\googletest-populate-prefix\src\googletest-populate-stamp\$(Configuration)\googletest-populate-build</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|win32'">No build step for 'googletest-populate'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|win32'">setlocal
+cd C:\Users\B_arn\ikt104g24h\FinallyExam\BUILD\_deps\googletest-build
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E touch C:/Users/B_arn/ikt104g24h/FinallyExam/BUILD/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/$(Configuration)/googletest-populate-build
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|win32'">C:\Users\B_arn\ikt104g24h\FinallyExam\BUILD\_deps\googletest-subbuild\googletest-populate-prefix\src\googletest-populate-stamp\$(Configuration)\googletest-populate-configure;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|win32'">C:\Users\B_arn\ikt104g24h\FinallyExam\BUILD\_deps\googletest-subbuild\googletest-populate-prefix\src\googletest-populate-stamp\$(Configuration)\googletest-populate-build</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">No build step for 'googletest-populate'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">setlocal
+cd C:\Users\B_arn\ikt104g24h\FinallyExam\BUILD\_deps\googletest-build
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E touch C:/Users/B_arn/ikt104g24h/FinallyExam/BUILD/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/$(Configuration)/googletest-populate-build
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">C:\Users\B_arn\ikt104g24h\FinallyExam\BUILD\_deps\googletest-subbuild\googletest-populate-prefix\src\googletest-populate-stamp\$(Configuration)\googletest-populate-configure;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">C:\Users\B_arn\ikt104g24h\FinallyExam\BUILD\_deps\googletest-subbuild\googletest-populate-prefix\src\googletest-populate-stamp\$(Configuration)\googletest-populate-build</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">No build step for 'googletest-populate'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">setlocal
+cd C:\Users\B_arn\ikt104g24h\FinallyExam\BUILD\_deps\googletest-build
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E touch C:/Users/B_arn/ikt104g24h/FinallyExam/BUILD/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/$(Configuration)/googletest-populate-build
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">C:\Users\B_arn\ikt104g24h\FinallyExam\BUILD\_deps\googletest-subbuild\googletest-populate-prefix\src\googletest-populate-stamp\$(Configuration)\googletest-populate-configure;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">C:\Users\B_arn\ikt104g24h\FinallyExam\BUILD\_deps\googletest-subbuild\googletest-populate-prefix\src\googletest-populate-stamp\$(Configuration)\googletest-populate-build</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\B_arn\ikt104g24h\FinallyExam\BUILD\_deps\googletest-subbuild\CMakeFiles\23bd7051fd3ba9e32c34376a52b9fff2\googletest-populate-install.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">No install step for 'googletest-populate'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">setlocal
+cd C:\Users\B_arn\ikt104g24h\FinallyExam\BUILD\_deps\googletest-build
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E touch C:/Users/B_arn/ikt104g24h/FinallyExam/BUILD/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/$(Configuration)/googletest-populate-install
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">C:\Users\B_arn\ikt104g24h\FinallyExam\BUILD\_deps\googletest-subbuild\googletest-populate-prefix\src\googletest-populate-stamp\$(Configuration)\googletest-populate-build;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">C:\Users\B_arn\ikt104g24h\FinallyExam\BUILD\_deps\googletest-subbuild\googletest-populate-prefix\src\googletest-populate-stamp\$(Configuration)\googletest-populate-install</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|win32'">No install step for 'googletest-populate'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|win32'">setlocal
+cd C:\Users\B_arn\ikt104g24h\FinallyExam\BUILD\_deps\googletest-build
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E touch C:/Users/B_arn/ikt104g24h/FinallyExam/BUILD/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/$(Configuration)/googletest-populate-install
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|win32'">C:\Users\B_arn\ikt104g24h\FinallyExam\BUILD\_deps\googletest-subbuild\googletest-populate-prefix\src\googletest-populate-stamp\$(Configuration)\googletest-populate-build;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|win32'">C:\Users\B_arn\ikt104g24h\FinallyExam\BUILD\_deps\googletest-subbuild\googletest-populate-prefix\src\googletest-populate-stamp\$(Configuration)\googletest-populate-install</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">No install step for 'googletest-populate'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">setlocal
+cd C:\Users\B_arn\ikt104g24h\FinallyExam\BUILD\_deps\googletest-build
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E touch C:/Users/B_arn/ikt104g24h/FinallyExam/BUILD/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/$(Configuration)/googletest-populate-install
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">C:\Users\B_arn\ikt104g24h\FinallyExam\BUILD\_deps\googletest-subbuild\googletest-populate-prefix\src\googletest-populate-stamp\$(Configuration)\googletest-populate-build;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">C:\Users\B_arn\ikt104g24h\FinallyExam\BUILD\_deps\googletest-subbuild\googletest-populate-prefix\src\googletest-populate-stamp\$(Configuration)\googletest-populate-install</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">No install step for 'googletest-populate'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">setlocal
+cd C:\Users\B_arn\ikt104g24h\FinallyExam\BUILD\_deps\googletest-build
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E touch C:/Users/B_arn/ikt104g24h/FinallyExam/BUILD/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/$(Configuration)/googletest-populate-install
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">C:\Users\B_arn\ikt104g24h\FinallyExam\BUILD\_deps\googletest-subbuild\googletest-populate-prefix\src\googletest-populate-stamp\$(Configuration)\googletest-populate-build;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">C:\Users\B_arn\ikt104g24h\FinallyExam\BUILD\_deps\googletest-subbuild\googletest-populate-prefix\src\googletest-populate-stamp\$(Configuration)\googletest-populate-install</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\B_arn\ikt104g24h\FinallyExam\BUILD\_deps\googletest-subbuild\CMakeFiles\23bd7051fd3ba9e32c34376a52b9fff2\googletest-populate-test.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">No test step for 'googletest-populate'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">setlocal
+cd C:\Users\B_arn\ikt104g24h\FinallyExam\BUILD\_deps\googletest-build
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E touch C:/Users/B_arn/ikt104g24h/FinallyExam/BUILD/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/$(Configuration)/googletest-populate-test
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">C:\Users\B_arn\ikt104g24h\FinallyExam\BUILD\_deps\googletest-subbuild\googletest-populate-prefix\src\googletest-populate-stamp\$(Configuration)\googletest-populate-install;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">C:\Users\B_arn\ikt104g24h\FinallyExam\BUILD\_deps\googletest-subbuild\googletest-populate-prefix\src\googletest-populate-stamp\$(Configuration)\googletest-populate-test</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|win32'">No test step for 'googletest-populate'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|win32'">setlocal
+cd C:\Users\B_arn\ikt104g24h\FinallyExam\BUILD\_deps\googletest-build
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E touch C:/Users/B_arn/ikt104g24h/FinallyExam/BUILD/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/$(Configuration)/googletest-populate-test
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|win32'">C:\Users\B_arn\ikt104g24h\FinallyExam\BUILD\_deps\googletest-subbuild\googletest-populate-prefix\src\googletest-populate-stamp\$(Configuration)\googletest-populate-install;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|win32'">C:\Users\B_arn\ikt104g24h\FinallyExam\BUILD\_deps\googletest-subbuild\googletest-populate-prefix\src\googletest-populate-stamp\$(Configuration)\googletest-populate-test</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">No test step for 'googletest-populate'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">setlocal
+cd C:\Users\B_arn\ikt104g24h\FinallyExam\BUILD\_deps\googletest-build
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E touch C:/Users/B_arn/ikt104g24h/FinallyExam/BUILD/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/$(Configuration)/googletest-populate-test
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">C:\Users\B_arn\ikt104g24h\FinallyExam\BUILD\_deps\googletest-subbuild\googletest-populate-prefix\src\googletest-populate-stamp\$(Configuration)\googletest-populate-install;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">C:\Users\B_arn\ikt104g24h\FinallyExam\BUILD\_deps\googletest-subbuild\googletest-populate-prefix\src\googletest-populate-stamp\$(Configuration)\googletest-populate-test</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">No test step for 'googletest-populate'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">setlocal
+cd C:\Users\B_arn\ikt104g24h\FinallyExam\BUILD\_deps\googletest-build
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E touch C:/Users/B_arn/ikt104g24h/FinallyExam/BUILD/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/$(Configuration)/googletest-populate-test
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">C:\Users\B_arn\ikt104g24h\FinallyExam\BUILD\_deps\googletest-subbuild\googletest-populate-prefix\src\googletest-populate-stamp\$(Configuration)\googletest-populate-install;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">C:\Users\B_arn\ikt104g24h\FinallyExam\BUILD\_deps\googletest-subbuild\googletest-populate-prefix\src\googletest-populate-stamp\$(Configuration)\googletest-populate-test</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\B_arn\ikt104g24h\FinallyExam\BUILD\_deps\googletest-subbuild\CMakeFiles\f938fcebdb2ac678d2385859349a2cbc\googletest-populate-complete.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">Completed 'googletest-populate'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">setlocal
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E make_directory C:/Users/B_arn/ikt104g24h/FinallyExam/BUILD/_deps/googletest-subbuild/CMakeFiles/$(Configuration)
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E touch C:/Users/B_arn/ikt104g24h/FinallyExam/BUILD/_deps/googletest-subbuild/CMakeFiles/$(Configuration)/googletest-populate-complete
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E touch C:/Users/B_arn/ikt104g24h/FinallyExam/BUILD/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/$(Configuration)/googletest-populate-done
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">C:\Users\B_arn\ikt104g24h\FinallyExam\BUILD\_deps\googletest-subbuild\googletest-populate-prefix\src\googletest-populate-stamp\$(Configuration)\googletest-populate-install;C:\Users\B_arn\ikt104g24h\FinallyExam\BUILD\_deps\googletest-subbuild\googletest-populate-prefix\src\googletest-populate-stamp\$(Configuration)\googletest-populate-mkdir;C:\Users\B_arn\ikt104g24h\FinallyExam\BUILD\_deps\googletest-subbuild\googletest-populate-prefix\src\googletest-populate-stamp\$(Configuration)\googletest-populate-download;C:\Users\B_arn\ikt104g24h\FinallyExam\BUILD\_deps\googletest-subbuild\googletest-populate-prefix\src\googletest-populate-stamp\$(Configuration)\googletest-populate-update;C:\Users\B_arn\ikt104g24h\FinallyExam\BUILD\_deps\googletest-subbuild\googletest-populate-prefix\src\googletest-populate-stamp\$(Configuration)\googletest-populate-patch;C:\Users\B_arn\ikt104g24h\FinallyExam\BUILD\_deps\googletest-subbuild\googletest-populate-prefix\src\googletest-populate-stamp\$(Configuration)\googletest-populate-configure;C:\Users\B_arn\ikt104g24h\FinallyExam\BUILD\_deps\googletest-subbuild\googletest-populate-prefix\src\googletest-populate-stamp\$(Configuration)\googletest-populate-build;C:\Users\B_arn\ikt104g24h\FinallyExam\BUILD\_deps\googletest-subbuild\googletest-populate-prefix\src\googletest-populate-stamp\$(Configuration)\googletest-populate-test;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">C:\Users\B_arn\ikt104g24h\FinallyExam\BUILD\_deps\googletest-subbuild\CMakeFiles\$(Configuration)\googletest-populate-complete</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">false</LinkObjects>
+      <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">false</VerifyInputsAndOutputsExist>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|win32'">Completed 'googletest-populate'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|win32'">setlocal
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E make_directory C:/Users/B_arn/ikt104g24h/FinallyExam/BUILD/_deps/googletest-subbuild/CMakeFiles/$(Configuration)
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E touch C:/Users/B_arn/ikt104g24h/FinallyExam/BUILD/_deps/googletest-subbuild/CMakeFiles/$(Configuration)/googletest-populate-complete
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E touch C:/Users/B_arn/ikt104g24h/FinallyExam/BUILD/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/$(Configuration)/googletest-populate-done
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|win32'">C:\Users\B_arn\ikt104g24h\FinallyExam\BUILD\_deps\googletest-subbuild\googletest-populate-prefix\src\googletest-populate-stamp\$(Configuration)\googletest-populate-install;C:\Users\B_arn\ikt104g24h\FinallyExam\BUILD\_deps\googletest-subbuild\googletest-populate-prefix\src\googletest-populate-stamp\$(Configuration)\googletest-populate-mkdir;C:\Users\B_arn\ikt104g24h\FinallyExam\BUILD\_deps\googletest-subbuild\googletest-populate-prefix\src\googletest-populate-stamp\$(Configuration)\googletest-populate-download;C:\Users\B_arn\ikt104g24h\FinallyExam\BUILD\_deps\googletest-subbuild\googletest-populate-prefix\src\googletest-populate-stamp\$(Configuration)\googletest-populate-update;C:\Users\B_arn\ikt104g24h\FinallyExam\BUILD\_deps\googletest-subbuild\googletest-populate-prefix\src\googletest-populate-stamp\$(Configuration)\googletest-populate-patch;C:\Users\B_arn\ikt104g24h\FinallyExam\BUILD\_deps\googletest-subbuild\googletest-populate-prefix\src\googletest-populate-stamp\$(Configuration)\googletest-populate-configure;C:\Users\B_arn\ikt104g24h\FinallyExam\BUILD\_deps\googletest-subbuild\googletest-populate-prefix\src\googletest-populate-stamp\$(Configuration)\googletest-populate-build;C:\Users\B_arn\ikt104g24h\FinallyExam\BUILD\_deps\googletest-subbuild\googletest-populate-prefix\src\googletest-populate-stamp\$(Configuration)\googletest-populate-test;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|win32'">C:\Users\B_arn\ikt104g24h\FinallyExam\BUILD\_deps\googletest-subbuild\CMakeFiles\$(Configuration)\googletest-populate-complete</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|win32'">false</LinkObjects>
+      <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='Release|win32'">false</VerifyInputsAndOutputsExist>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">Completed 'googletest-populate'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">setlocal
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E make_directory C:/Users/B_arn/ikt104g24h/FinallyExam/BUILD/_deps/googletest-subbuild/CMakeFiles/$(Configuration)
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E touch C:/Users/B_arn/ikt104g24h/FinallyExam/BUILD/_deps/googletest-subbuild/CMakeFiles/$(Configuration)/googletest-populate-complete
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E touch C:/Users/B_arn/ikt104g24h/FinallyExam/BUILD/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/$(Configuration)/googletest-populate-done
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">C:\Users\B_arn\ikt104g24h\FinallyExam\BUILD\_deps\googletest-subbuild\googletest-populate-prefix\src\googletest-populate-stamp\$(Configuration)\googletest-populate-install;C:\Users\B_arn\ikt104g24h\FinallyExam\BUILD\_deps\googletest-subbuild\googletest-populate-prefix\src\googletest-populate-stamp\$(Configuration)\googletest-populate-mkdir;C:\Users\B_arn\ikt104g24h\FinallyExam\BUILD\_deps\googletest-subbuild\googletest-populate-prefix\src\googletest-populate-stamp\$(Configuration)\googletest-populate-download;C:\Users\B_arn\ikt104g24h\FinallyExam\BUILD\_deps\googletest-subbuild\googletest-populate-prefix\src\googletest-populate-stamp\$(Configuration)\googletest-populate-update;C:\Users\B_arn\ikt104g24h\FinallyExam\BUILD\_deps\googletest-subbuild\googletest-populate-prefix\src\googletest-populate-stamp\$(Configuration)\googletest-populate-patch;C:\Users\B_arn\ikt104g24h\FinallyExam\BUILD\_deps\googletest-subbuild\googletest-populate-prefix\src\googletest-populate-stamp\$(Configuration)\googletest-populate-configure;C:\Users\B_arn\ikt104g24h\FinallyExam\BUILD\_deps\googletest-subbuild\googletest-populate-prefix\src\googletest-populate-stamp\$(Configuration)\googletest-populate-build;C:\Users\B_arn\ikt104g24h\FinallyExam\BUILD\_deps\googletest-subbuild\googletest-populate-prefix\src\googletest-populate-stamp\$(Configuration)\googletest-populate-test;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">C:\Users\B_arn\ikt104g24h\FinallyExam\BUILD\_deps\googletest-subbuild\CMakeFiles\$(Configuration)\googletest-populate-complete</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">false</LinkObjects>
+      <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">false</VerifyInputsAndOutputsExist>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">Completed 'googletest-populate'</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">setlocal
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E make_directory C:/Users/B_arn/ikt104g24h/FinallyExam/BUILD/_deps/googletest-subbuild/CMakeFiles/$(Configuration)
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E touch C:/Users/B_arn/ikt104g24h/FinallyExam/BUILD/_deps/googletest-subbuild/CMakeFiles/$(Configuration)/googletest-populate-complete
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E touch C:/Users/B_arn/ikt104g24h/FinallyExam/BUILD/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/$(Configuration)/googletest-populate-done
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">C:\Users\B_arn\ikt104g24h\FinallyExam\BUILD\_deps\googletest-subbuild\googletest-populate-prefix\src\googletest-populate-stamp\$(Configuration)\googletest-populate-install;C:\Users\B_arn\ikt104g24h\FinallyExam\BUILD\_deps\googletest-subbuild\googletest-populate-prefix\src\googletest-populate-stamp\$(Configuration)\googletest-populate-mkdir;C:\Users\B_arn\ikt104g24h\FinallyExam\BUILD\_deps\googletest-subbuild\googletest-populate-prefix\src\googletest-populate-stamp\$(Configuration)\googletest-populate-download;C:\Users\B_arn\ikt104g24h\FinallyExam\BUILD\_deps\googletest-subbuild\googletest-populate-prefix\src\googletest-populate-stamp\$(Configuration)\googletest-populate-update;C:\Users\B_arn\ikt104g24h\FinallyExam\BUILD\_deps\googletest-subbuild\googletest-populate-prefix\src\googletest-populate-stamp\$(Configuration)\googletest-populate-patch;C:\Users\B_arn\ikt104g24h\FinallyExam\BUILD\_deps\googletest-subbuild\googletest-populate-prefix\src\googletest-populate-stamp\$(Configuration)\googletest-populate-configure;C:\Users\B_arn\ikt104g24h\FinallyExam\BUILD\_deps\googletest-subbuild\googletest-populate-prefix\src\googletest-populate-stamp\$(Configuration)\googletest-populate-build;C:\Users\B_arn\ikt104g24h\FinallyExam\BUILD\_deps\googletest-subbuild\googletest-populate-prefix\src\googletest-populate-stamp\$(Configuration)\googletest-populate-test;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">C:\Users\B_arn\ikt104g24h\FinallyExam\BUILD\_deps\googletest-subbuild\CMakeFiles\$(Configuration)\googletest-populate-complete</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">false</LinkObjects>
+      <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">false</VerifyInputsAndOutputsExist>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\B_arn\ikt104g24h\FinallyExam\BUILD\_deps\googletest-subbuild\CMakeFiles\bfe789abd4252b4cff34b0c6b37419ac\googletest-populate.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|win32'"></Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">C:\Users\B_arn\ikt104g24h\FinallyExam\BUILD\_deps\googletest-subbuild\CMakeFiles\$(Configuration)\googletest-populate-complete;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">C:\Users\B_arn\ikt104g24h\FinallyExam\BUILD\_deps\googletest-subbuild\CMakeFiles\googletest-populate</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">false</LinkObjects>
+      <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">false</VerifyInputsAndOutputsExist>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|win32'"></Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|win32'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|win32'">C:\Users\B_arn\ikt104g24h\FinallyExam\BUILD\_deps\googletest-subbuild\CMakeFiles\$(Configuration)\googletest-populate-complete;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|win32'">C:\Users\B_arn\ikt104g24h\FinallyExam\BUILD\_deps\googletest-subbuild\CMakeFiles\googletest-populate</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|win32'">false</LinkObjects>
+      <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='Release|win32'">false</VerifyInputsAndOutputsExist>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'"></Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">C:\Users\B_arn\ikt104g24h\FinallyExam\BUILD\_deps\googletest-subbuild\CMakeFiles\$(Configuration)\googletest-populate-complete;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">C:\Users\B_arn\ikt104g24h\FinallyExam\BUILD\_deps\googletest-subbuild\CMakeFiles\googletest-populate</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">false</LinkObjects>
+      <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">false</VerifyInputsAndOutputsExist>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'"></Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">C:\Users\B_arn\ikt104g24h\FinallyExam\BUILD\_deps\googletest-subbuild\CMakeFiles\$(Configuration)\googletest-populate-complete;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">C:\Users\B_arn\ikt104g24h\FinallyExam\BUILD\_deps\googletest-subbuild\CMakeFiles\googletest-populate</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">false</LinkObjects>
+      <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">false</VerifyInputsAndOutputsExist>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\B_arn\ikt104g24h\FinallyExam\BUILD\_deps\googletest-subbuild\CMakeLists.txt">
+      <StdOutEncoding>UTF-8</StdOutEncoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">Building Custom Rule C:/Users/B_arn/ikt104g24h/FinallyExam/BUILD/_deps/googletest-subbuild/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">setlocal
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SC:/Users/B_arn/ikt104g24h/FinallyExam/BUILD/_deps/googletest-subbuild -BC:/Users/B_arn/ikt104g24h/FinallyExam/BUILD/_deps/googletest-subbuild --check-stamp-file C:/Users/B_arn/ikt104g24h/FinallyExam/BUILD/_deps/googletest-subbuild/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\CMakeGenericSystem.cmake;C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\CMakeInitializeConfigs.cmake;C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\ExternalProject-gitupdate.cmake.in;C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\ExternalProject.cmake;C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\Platform\Windows.cmake;C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\Platform\WindowsPaths.cmake;C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\RepositoryInfo.txt.in;C:\Users\B_arn\ikt104g24h\FinallyExam\BUILD\_deps\googletest-subbuild\CMakeFiles\3.20.21032501-MSVC_2\CMakeSystem.cmake;C:\Users\B_arn\ikt104g24h\FinallyExam\BUILD\_deps\googletest-subbuild\googletest-populate-prefix\tmp\googletest-populate-cfgcmd.txt.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">C:\Users\B_arn\ikt104g24h\FinallyExam\BUILD\_deps\googletest-subbuild\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|win32'">Building Custom Rule C:/Users/B_arn/ikt104g24h/FinallyExam/BUILD/_deps/googletest-subbuild/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|win32'">setlocal
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SC:/Users/B_arn/ikt104g24h/FinallyExam/BUILD/_deps/googletest-subbuild -BC:/Users/B_arn/ikt104g24h/FinallyExam/BUILD/_deps/googletest-subbuild --check-stamp-file C:/Users/B_arn/ikt104g24h/FinallyExam/BUILD/_deps/googletest-subbuild/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|win32'">C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\CMakeGenericSystem.cmake;C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\CMakeInitializeConfigs.cmake;C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\ExternalProject-gitupdate.cmake.in;C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\ExternalProject.cmake;C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\Platform\Windows.cmake;C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\Platform\WindowsPaths.cmake;C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\RepositoryInfo.txt.in;C:\Users\B_arn\ikt104g24h\FinallyExam\BUILD\_deps\googletest-subbuild\CMakeFiles\3.20.21032501-MSVC_2\CMakeSystem.cmake;C:\Users\B_arn\ikt104g24h\FinallyExam\BUILD\_deps\googletest-subbuild\googletest-populate-prefix\tmp\googletest-populate-cfgcmd.txt.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|win32'">C:\Users\B_arn\ikt104g24h\FinallyExam\BUILD\_deps\googletest-subbuild\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">Building Custom Rule C:/Users/B_arn/ikt104g24h/FinallyExam/BUILD/_deps/googletest-subbuild/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">setlocal
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SC:/Users/B_arn/ikt104g24h/FinallyExam/BUILD/_deps/googletest-subbuild -BC:/Users/B_arn/ikt104g24h/FinallyExam/BUILD/_deps/googletest-subbuild --check-stamp-file C:/Users/B_arn/ikt104g24h/FinallyExam/BUILD/_deps/googletest-subbuild/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\CMakeGenericSystem.cmake;C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\CMakeInitializeConfigs.cmake;C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\ExternalProject-gitupdate.cmake.in;C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\ExternalProject.cmake;C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\Platform\Windows.cmake;C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\Platform\WindowsPaths.cmake;C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\RepositoryInfo.txt.in;C:\Users\B_arn\ikt104g24h\FinallyExam\BUILD\_deps\googletest-subbuild\CMakeFiles\3.20.21032501-MSVC_2\CMakeSystem.cmake;C:\Users\B_arn\ikt104g24h\FinallyExam\BUILD\_deps\googletest-subbuild\googletest-populate-prefix\tmp\googletest-populate-cfgcmd.txt.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">C:\Users\B_arn\ikt104g24h\FinallyExam\BUILD\_deps\googletest-subbuild\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">Building Custom Rule C:/Users/B_arn/ikt104g24h/FinallyExam/BUILD/_deps/googletest-subbuild/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">setlocal
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SC:/Users/B_arn/ikt104g24h/FinallyExam/BUILD/_deps/googletest-subbuild -BC:/Users/B_arn/ikt104g24h/FinallyExam/BUILD/_deps/googletest-subbuild --check-stamp-file C:/Users/B_arn/ikt104g24h/FinallyExam/BUILD/_deps/googletest-subbuild/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\CMakeGenericSystem.cmake;C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\CMakeInitializeConfigs.cmake;C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\ExternalProject-gitupdate.cmake.in;C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\ExternalProject.cmake;C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\Platform\Windows.cmake;C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\Platform\WindowsPaths.cmake;C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\RepositoryInfo.txt.in;C:\Users\B_arn\ikt104g24h\FinallyExam\BUILD\_deps\googletest-subbuild\CMakeFiles\3.20.21032501-MSVC_2\CMakeSystem.cmake;C:\Users\B_arn\ikt104g24h\FinallyExam\BUILD\_deps\googletest-subbuild\googletest-populate-prefix\tmp\googletest-populate-cfgcmd.txt.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">C:\Users\B_arn\ikt104g24h\FinallyExam\BUILD\_deps\googletest-subbuild\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="C:\Users\B_arn\ikt104g24h\FinallyExam\BUILD\_deps\googletest-subbuild\CMakeFiles\googletest-populate">
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="C:\Users\B_arn\ikt104g24h\FinallyExam\BUILD\_deps\googletest-subbuild\ZERO_CHECK.vcxproj">
+      <Project>{8AD0F25F-849E-3C70-983E-3CF2AF75443E}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
